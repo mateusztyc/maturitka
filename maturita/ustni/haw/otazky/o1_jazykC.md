@@ -7,7 +7,9 @@ nav_exclude: true
 ---
 # Programovací jazyk C
 ## 1. Vývojové prostředí Dev C++, compiler a linker
-![](/assets/images/kevin.jpg)
+
+![](../../assets/images/kevin.jpg)
+
 - **EDITOR** -program v jazyce C, tzv. zdrojový kód, můžeme napsat v jednoduchém textovém editoru. Jeho výstupem je soubor s příponou. c (případně.cpp). Je vhodné nepoužívat v názvech souborů české znaky a mezery.
 - **KOMPILÁTOR - PŘEKLADAČ** - textový soubor nejdřív zpracuje preprocesor, který zdrojový kód částečně upraví. Vloží hlavičkové soubory, odstraní komentáře, nahradí symbolické konstanty apod. Preprocesor je součástí překladače. Potom překladač přeloží příkazy, vznikne tzv. relativní kód (s příponou.obj). V případě, že se v programu vyskytnou formální chyby, je nutné je opravit a kód znovu zkompilovat.
 - **LINKER - SESTAVOVACÍ PROGRAM** - poslední fází je propojení relativního kódu a knihovních souborů (.lib). Výsledkem je spustitelný soubor (ve Windows s příponou.exe).
