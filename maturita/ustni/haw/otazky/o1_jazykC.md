@@ -335,6 +335,7 @@ Pro použití funkcí pro načtení a výpis musíme vložit hlavičkový soubor
 **Typy souborů - textový a binární**
  - Textové soubory obsahují řádky textu, jejich obsah si můžeme prohlídnout, případně změnit v textovém editoru
  - Binární soubor obsahuje informace zapsány binárně (zakódovaně)
+ - Můžeme zapisovat do jakéhokoliv typu souboru
 
 **Deklarace proměnných pro práci se souborem:**
 
