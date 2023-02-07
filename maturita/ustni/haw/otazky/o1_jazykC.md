@@ -346,6 +346,8 @@ Pro použití funkcí pro načtení a výpis musíme vložit hlavičkový soubor
  - Pro otevření souboru používáme funkci fopen();, má dva parametry – název souboru a režim pro práci s daty
  - Soubor uzavřeme funkcí fclose();
 
+        soubor = fopen("data.txt","r");
+
 **Režimy otevření textových souborů**
  - r= pro čtení
  - w= pro zápis, pokud soubor neexistuje -> vytvoří se, jinak se data přepisují
