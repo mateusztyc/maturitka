@@ -14,5 +14,7 @@ seo:
 - A možná jednou fungovat bude
 - A možná ne
 
+![testovací obrázek](test.png "Testovací obrázekk")
+
 
 <!-- [Github cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf) -->
