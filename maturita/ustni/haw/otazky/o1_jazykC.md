@@ -46,7 +46,6 @@ Přetypování je způsob, jak změnit interpretaci nějakého datového typu, a
     %c      znak
     %d      celé desítkové číslo
     %f      reálné číslo (float)
-    %s      řetězec
 
 **//výpis textu a odřádkování:**
 - printf("Příklady výpisu hodnot na obrazovku: \n\n");
