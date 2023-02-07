@@ -16,7 +16,7 @@ nav_exclude: true
      - Dění většiny próz
 - V knihách se odráží jeho pracovní zkušenost z práce na farmě, a i osobních zároveň
 - Řadí se mezi autory **Ztracené generace**
-- Dílo
+- Dílo:
     - Hrozny hněvu – sociální román, rodina opouš􀆡 domov a hledá „lepší“ život
     - Na východ od ráje – rozvíjí sple􀆟tou historii dvou rodů
     - Neznámému Bohu
@@ -37,3 +37,37 @@ nav_exclude: true
     - sociálně kritická próza
     - realismus (z latiny skutečný)
         - zobrazení skutečnosti, užívají se nové výrazové prostředky, lit. Hrdina se vyvíjí
+- **Literární doba:**
+    - Meziválečná literatura, v Americe se odehrávala hospodářská krize
+- **Téma:**
+    - Samota/osamělost – autorský záměr
+        - Přátelství Lennieho a George je výjimka
+        - Všechny jiné postavy jsou osamělé
+        - George nakonec taky skončí sám
+        - Lidi si jí způsobuji sami nebo ji způsobuji svým bližním
+    - Zkaženost, předsudky, rasismus, nenávist, šovinismus
+    - Stav lidské společnosti
+    - Sen a tužba
+        - Zhroucené sny
+            - George a Lennie -> Vlastní farma
+            - Candy -> Získá zpět zodpovědnost po smrti psa
+            - Crooks -> Nabude respekt od okolí
+            - Carleyho manželka -> stát se herečkou a najít si přátelé
+- **Motiv:**
+- **Kompozice díla:**
+    - Forma vyprávění
+    - Stavba textu je jednoduchá a přehledná
+    - Neobsahuje úvahy
+    - Novela s kapitoly (6)
+    - Chronologická
+- **Jazykové prostředky:**
+    - Er forma
+    - Mnoho dialogů
+    - Jazyk je jednoduchý, obecný, hovorový
+    - Využití slangu
+    - Kontrasty
+- **Časoprostor:**
+    - Amerika
+    - 30. léta 20. století
+    - Období hospodářské krize v USA
+    - Poblíž města Soledad (španělsky samota)
