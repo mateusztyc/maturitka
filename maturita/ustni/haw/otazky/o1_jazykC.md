@@ -237,12 +237,13 @@ Pro použití funkcí pro načtení a výpis musíme vložit hlavičkový soubor
 
 **Definice funkce**
  - Definice funkce obsahuje kompletní zápis funkce, tj hlavičku i tělo funkce
- - Uvádí se za funkcí main();
+ - Uvádí se za funkcí main(), pokud je funkce předem deklarovaná, jinak před funkcí main()
  - Pro název funkce platí stejná pravidla jako název proměnné
 
 **Prototyp funkce (deklarace)**
  - Obsahuje název funkce, typ návratové hodnoty a typy parametrů
  - Končí středníkem a píše se na začátek programu před funkci main()
+ - Deklarace musí být vždy před funkcí main()
 
 **Návratová hodnota**
  - typ návratové hodnoty uvádíme před názvem funkce v její deklaraci a definici
