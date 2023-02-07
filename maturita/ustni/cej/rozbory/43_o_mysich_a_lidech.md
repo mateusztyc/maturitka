@@ -37,8 +37,10 @@ nav_exclude: true
     - sociálně kritická próza
     - realismus (z latiny skutečný)
         - zobrazení skutečnosti, užívají se nové výrazové prostředky, lit. Hrdina se vyvíjí
+
 - **Literární doba:**
     - Meziválečná literatura, v Americe se odehrávala hospodářská krize
+
 - **Téma:**
     - Samota/osamělost – autorský záměr
         - Přátelství Lennieho a George je výjimka
@@ -53,21 +55,99 @@ nav_exclude: true
             - Candy -> Získá zpět zodpovědnost po smrti psa
             - Crooks -> Nabude respekt od okolí
             - Carleyho manželka -> stát se herečkou a najít si přátelé
+
 - **Motiv:**
+
 - **Kompozice díla:**
     - Forma vyprávění
     - Stavba textu je jednoduchá a přehledná
     - Neobsahuje úvahy
     - Novela s kapitoly (6)
     - Chronologická
+
 - **Jazykové prostředky:**
     - Er forma
     - Mnoho dialogů
     - Jazyk je jednoduchý, obecný, hovorový
     - Využití slangu
     - Kontrasty
+
 - **Časoprostor:**
     - Amerika
-    - 30. léta 20. století
+    - .30. léta 20. století
     - Období hospodářské krize v USA
     - Poblíž města Soledad (španělsky samota)
+
+- **Děj:**
+    - Dva hlavní hrdinové
+        - George Milton a Lennie Small
+            - Narážka na básníka Johna Miltona??
+            - Small-> Malý => Lennie-> Obr
+        - Dělníci, putují po různých farmách, na kterých pracují
+        - Lehce komická dvojice
+        - Jsou plní protikladů
+        - George
+            - Malý a chytrý
+        - Lennie
+            - Silný a mentálně zaostalý, hodný
+            - Na jedné z farem zatáhl ženu za šaty
+            - Vzala to jako pokus o znásilnění
+        - Mají sen -> Založit si vlastní farmu
+            - George, vedoucí
+            - Lennie, pečuje o zvířátka
+    - Většina děje se odehrává na farmě
+    - Syn správce farmy -> Curley
+    - Mini příběhy, které odhalují charakter fikčního světa vytvořeného Steinbeckem
+    - V jeden moment nechá George Lennieho bez dozoru
+    - Ten se pustí do rozhovoru s Curleyho ženou
+    - Nabídla mu hrátky s jejími vlasy
+    - On moc silně zatáhne, ona se lekne
+    - Omylem jí zlomí vaz
+    - George a Lennie měli předem domluvený plán co dělat, když nastane tato situace
+    - On uteče a lidi z farmy se ho vydají hledat
+    - Chtějí ho zabít
+    - George ho najde první, protože ví, kam šel
+        - Aby ho utěšil, začnou mluvit o své farmě
+    - George ho pak zastřelí
+        - Je to dobrý skutek, ušetří ho dlouhého trápení
+    - Kniha končí „optimisticky“
+        - Sny jsou pouze ideologické, nejsou hmotné
+        - George nelituje toho, že nebudou mít farmu, ale že přišel o přítele
+        - Materialismus prohrál nad abstraktním prvkem(přátelství)
+- **Charakteristika postav:**
+    - Lennie Small
+        - Rád se mazlí s huňatými zvířátky, často je nechtěně zabije kvůli své síle
+        - Nemá nad sebou kontrolu
+        - Mentálně zaostalý
+        - Velký a silný
+    - George Milton
+        - Opatrný
+        - Starostlivý
+        - Malý
+        - Rozumný
+    - Curley
+        - Antagonista
+        - Prcek, napoleonský komplex, protiví se mu Lennie, protože je obří
+        - Agresivní, závistivý
+    - Curleyho manželka
+        - Antagonista
+        - Flundra
+        - Není spokojená v manželství
+            - => Flirtuje se zaměstnanci farmy
+            - Zároveň jim vyhrožuje
+            - Navzájem se nemají rádi
+        - Jediná žena na farmě
+    - Candy
+        - Starý, jednoruký
+        - Šéf mu vyplatil bolestné
+        - Nabízí se, že by financoval Georgovu farmu, chce být na Georgově farmě
+        - Přišel o psa
+    - Crooks
+        - Afroameričan
+        - Pocit sebenenávisti
+            - Není spokojen sám se sebou
+- **Zajimavosti:**
+    - Zfilmováno
+    - Psáno jako "drama"
+        - Upozaděna postava vypravěče
+        - Předloha pro dramatická zpracování
