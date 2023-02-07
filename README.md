@@ -12,6 +12,7 @@ seo:
 {: .text-yellow-300}
 
 - A možná jednou fungovat bude
+- A možná ne
 
 
 <!-- [Github cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf) -->
