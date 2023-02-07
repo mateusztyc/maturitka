@@ -11,5 +11,7 @@ seo:
 ## &#127959; Furt tu něco nefunguje
 {: .text-yellow-300}
 
+- A možná jednou fungovat bude
+
 
 <!-- [Github cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf) -->
