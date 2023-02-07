@@ -6,3 +6,8 @@ has_children: false
 nav_exclude: true
 ---
 # O myších a lidech
+## John Steinbeck
+
+### John Steinbeck (1902-1968)(USA) 
+- Velký americký autor
+- 
