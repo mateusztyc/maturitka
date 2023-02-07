@@ -263,7 +263,8 @@ Pro použití funkcí pro načtení a výpis musíme vložit hlavičkový soubor
  - volají samy sebe
  - je nutné dobře stanovit ukončovací podmínku – jinak hrozí přeplnění paměti a zatuhnutí programu
 
- ## 9. Struktura a ukazatelé ##
+## 9. Struktura a ukazatelé 
+ 
  **Struktura**
  - Používáme pro uložení údajů různých datových typů
  - Všechny informace máme v jedné proměnné
