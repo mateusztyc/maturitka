@@ -28,7 +28,7 @@ nav_exclude: true
 - 5 dějství/jednání/aktů:
     - 1. Nástínění tématu (jednání Lízala s Vávrou, odchod Francka na vojnu)
     - 2. Přemlouvání Maryši k sňatku (Pochopení pouze od babičky)
-    - 3. Svatba, Francek se vrací z vojny, otec přesvědčuje Maryšu aby od Vávry utekla
+    - 3. Svatba, Francek se vrací z vojny, otec přesvědčuje Maryšu aby od Vávry utekla (Mezi 2. a 3. dějstvím 2roky !)
     - 4. Francek přesvědčuje Maryšu aby s ním utekla, dějství se končí výstřely
     - 5. Smrt Vávry, přiznání Maryši
 
