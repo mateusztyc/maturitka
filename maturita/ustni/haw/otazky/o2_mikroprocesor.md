@@ -6,6 +6,16 @@ has_children: false
 nav_exclude: true
 image1: /assets/images/mikropocitac.jpg
 image2: /assets/images/cinnost.jpg
+image3: /assets/images/neumann.jpg
+image4: /assets/images/harvard.jpg
+image5: /assets/images/soc.jpg
+image6: /assets/images/ahb1.jpg
+image7: /assets/images/moder.jpg
+image8: /assets/images/idr.jpg
+image9: /assets/images/odr.jpg
+image10: /assets/images/bsrr.jpg
+image11: /assets/images/trigger.jpg
+image12: /assets/images/diagram.jpg
 ---
 # Mikroprocesor
 - Lze definovat jako sekvenční automat vyrobený technologií VLSI(Very Large Scale Integration)
@@ -36,6 +46,7 @@ image2: /assets/images/cinnost.jpg
     - Vznikla 1945
     - Obsahuje 5 základních částí
     - **základem dnešních výpočetních strojů** - s jistými změnami jako je multitasking, víceprocesorové systémy, vstupně-výstupní zařízení, program nemusí být celý zaveden v OP
+![Neumann]({{page.image3 | relative_url}})
     - Instrukce i data jsou členěny do slov/slabik stejného formátu (8-bit velikost) – jsou uloženy ve společné paměti a nejsou nijak speciálně rozlišeny
     - V společné paměti hrozí přepsání dat
     - Data zpracovává sekvenčně (posupně) oproti harvardské, která je zpracovává paralelně
@@ -45,6 +56,7 @@ image2: /assets/images/cinnost.jpg
         - Paměť je rozdělena na buňky stejně velikosti a přistupuje se k nim pomocí adresy
         - Program tvoří posloupnost instrukcí – jsou prováděny sekvenčně vyjma skokových instrukcí
 - ### Harvardská architektura
+![Harvard]({{page.image4 | relative_url}})
     - Snaží se řešit problém Von Neumannovy metody -> zavádí 2 paměti – 1 pro program a 1 pro data
     - Paměti můžou být různého typu a velikosti
     - Nedají se kombinovat – pokud dojde paměť pro data nemůžeme je uložit nikam jinam
@@ -116,6 +128,7 @@ image2: /assets/images/cinnost.jpg
     - Nižší spotřeba
     - Vysoká míra integrace
 - Malá možnost HW konfigurace
+![SOC]({{page.image5 | relative_url}})
 
 ## STM32F4
 - STM32F407VGT6
@@ -176,14 +189,15 @@ image2: /assets/images/cinnost.jpg
 - Periférie komunikují s CPU prostřednictvím mostu mezi AHB a APB
 
 #### RCC->AHB1ENR – AKTIVACE PŘISLUŠNÉHO PORTU
-
+![AHB1ENR]({{page.image6 | relative_url}})
 #### GPIOx->MODER – nastavení modu příslušného portu
-
+![MODER]({{page.image7 | relative_url}})
 #### GPIOx->IDR – vstup dat
-
+![IDR]({{page.image8 | relative_url}})
 #### GPIOx->ODR – výstup dat
-
+![ODR]({{page.image9 | relative_url}})
 #### GPIOx->BSRR – nastavení/resetovaní bitu
+![BSRR]({{page.image10 | relative_url}})
 
 ## STM32F4 - školní kit
 - LCD 8x2
@@ -246,4 +260,53 @@ image2: /assets/images/cinnost.jpg
 - Při přetečení nebo auto-reload může být generováno přerušení nebo signál pro DMA
 - Možnost využít také pro řízení DAC
     - Vnitřně spojeny s DAC prostřednictvím „trigger output“
-    
+![Trigger]({{page.image11 | relative_url}})
+
+## Bity
+- Update Generation (UG)
+    - Nastavuje se v TIMx_EGR
+    - Povolení vyvolání přerušení pro přetečení časovače
+
+- Auto-Reload Preload Enable bit (ARPE)
+    - Nastavuje se v TIMx_CR1
+    - Zda bude přednačzena hodnota z auto-reload registru
+
+- Counter Enable Bit (CEN)
+    - Nastavuje se v TIMx_CR1
+    - Povolení časovače, jinak neběží
+
+- Update Interrupt Flag (UIF)
+    - Nastaven v TIMx_SR při přetečení
+    - Nutno ručně nulovat
+
+## Registry
+- Control Register 1
+    - TIMx_CR1
+    - Základní nastavení časovače
+
+- Control Register 2
+    - TIMx_CR2
+    - Určen k nastavení triggeru (Využito u DA)
+
+- Status Register
+    - TIMx_SR
+    - Obsahuje informaci o přetečení časovače
+
+- Counter Register
+    - TIMx_CNT
+    - Možnost čtení nebo zápisu hodnoty i za běhu časovače
+
+- Prescaler Register
+    - TIMx_PSC
+    - Zde je uložena hodnota pro dělení signálu
+
+- Auto-Reload Register
+    - TIMx_ARR
+    - Uložena hodnota, při které se má čitač restartovat
+
+- Event Generation Register
+    - TIMx_EGR
+    - Obsahuje povolení generování UEV (update event), kdy dojde k aktualizaci čítače a jeho restartu
+
+## ARM blokový diagram
+![Diagram]({{page.image12 | relative_url}})
