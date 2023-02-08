@@ -4,7 +4,7 @@ title: Programovací jazyk C
 description: Otázka č.1 - Programovací jazyk C
 has_children: false
 nav_exclude: true
-subpath: '/assets/images/'
+subpath: '/assets/'
 ---
 # Programovací jazyk C
 ## 1. Vývojové prostředí Dev C++, compiler a linker
