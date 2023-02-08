@@ -54,13 +54,11 @@ defaults:
       type: modules
     values:
       layout: module
-      subpath: './assets/images/'
   - scope:
       path: ''
       type: schedules
     values:
       layout: schedule
-      subpath: './assets/images/'
   - scope:
       path: ''
       type: announcements
