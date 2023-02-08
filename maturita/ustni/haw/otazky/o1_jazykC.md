@@ -378,7 +378,7 @@ Pro použití funkcí pro načtení a výpis musíme vložit hlavičkový soubor
         fread(&x, sizeof(Tdata), 1, f);
 
 ## 11. Knihovny 
- - Základní součást programování
+ - Základní součást programování.
  - Obsahují sadu funkcí a struktur
  - Linker připojuje naši aplikaci ke knihovnám
  - Na knihovny se musíme na začátku každé aplikaci nejdříve odvolat
