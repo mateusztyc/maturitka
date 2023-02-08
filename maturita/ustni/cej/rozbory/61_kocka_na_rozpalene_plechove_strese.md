@@ -17,13 +17,13 @@ nav_exclude: true
     - pracoval jako svobodný spisovatel
 - Pulitzerova cena (1947)
 - ### Dílo:
-    - #### **Tramvaj do stanice touha**
+    - ### Tramvaj do stanice touha
         - tragický příběh jižanské krásky Blanche
             - uteče z domova k sestře
              - její muž jí brutálně znásilnil
     
 
-    - #### **Kočka na rozpálené plechové střeše**
+    - ### Kočka na rozpálené plechové střeše
         - metafora
         - hra o třech dějstvích
         - psychologické drama
