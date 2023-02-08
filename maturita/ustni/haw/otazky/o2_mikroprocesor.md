@@ -4,6 +4,8 @@ title: Mikroprocesor
 description: Otázka č.2 - Mikroprocesor
 has_children: false
 nav_exclude: true
+image1: /assets/images/mikropocitac.jpg
+image2: /assets/images/cinnost.jpg
 ---
 # Mikroprocesor
 - Lze definovat jako sekvenční automat vyrobený technologií VLSI(Very Large Scale Integration)
@@ -11,6 +13,7 @@ nav_exclude: true
 - Bez podpůrných obvodů není schopen provozu
 - Mikropočítač vznikne připojením k paměti vstupních a výstupních bloků (je rozšířen o paměť, vstupní a výstupní bloky)
 - Mikropočítač doplněný o periferie umožňující komunikaci s uživatelem (monitor, klávesnice, myš, vnější paměť) pak tvoří mikropočítačový systém
+![Mikropočítač]({{page.image1 | relative_url}})
 
 ## Mikroprocesor - abstrakce
 - Výpočetní systém si lze představit jako člověka -> řadič
@@ -24,6 +27,9 @@ nav_exclude: true
     - Každou minutu je proveden další příkaz (instrukce)
 - Příkazy na papíru jsou zpracovány sekvenčně
     - Program Counter
+
+## Mikroprocessor - činnost
+![Činnost]({{page.image2 | relative_url}})
 
 ## Architektury
 - ### Von Neumannova architektura
