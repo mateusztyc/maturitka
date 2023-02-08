@@ -64,6 +64,12 @@ defaults:
       type: announcements
     values:
       layout: announcement
+  - scope:
+      path: ''
+      type: maturita
+    values:
+      layout: module
+      subpath: './assets/'
 
 compress_html:
   clippings: all
