@@ -10,4 +10,5 @@ has_children: false
 
 ### [40. Maryša](rozbory/40_marysa/)
 ### [45. O myších a lidech](rozbory/45_o_mysich_a_lidech/)
+### [60. Alchymista](rozbory/60_alchymista/)
 ### [61. Kočka na rozpálené plechové střeše](rozbory/61_kocka_na_rozpalene_plechove_strese/)
