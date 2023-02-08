@@ -45,20 +45,22 @@ collections:
 defaults:
   - scope:
       path: ''
-      type: page
+      type: staffers
     values:
-      layout: page
+      layout: staffer
       subpath: './assets/images/'
   - scope:
       path: ''
       type: modules
     values:
       layout: module
+      subpath: './assets/images/'
   - scope:
       path: ''
       type: schedules
     values:
       layout: schedule
+      subpath: './assets/images/'
   - scope:
       path: ''
       type: announcements
