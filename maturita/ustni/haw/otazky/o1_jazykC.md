@@ -4,12 +4,12 @@ title: Programovací jazyk C
 description: Otázka č.1 - Programovací jazyk C
 has_children: false
 nav_exclude: true
-subpath: '/maturita/ustni/haw/otazky/'
+image: /assets/images/kompiler.jpg
 ---
 # Programovací jazyk C
 ## 1. Vývojové prostředí Dev C++, compiler a linker
 
-![kompiler](/maturita/ustni/haw/otazky/kompiler.jpg)
+![kompiler]({{page.image | relative_url}})
 
 - **EDITOR** -program v jazyce C, tzv. zdrojový kód, můžeme napsat v jednoduchém textovém editoru. Jeho výstupem je soubor s příponou. c (případně.cpp). Je vhodné nepoužívat v názvech souborů české znaky a mezery.
 - **KOMPILÁTOR - PŘEKLADAČ** - textový soubor nejdřív zpracuje preprocesor, který zdrojový kód částečně upraví. Vloží hlavičkové soubory, odstraní komentáře, nahradí symbolické konstanty apod. Preprocesor je součástí překladače. Potom překladač přeloží příkazy, vznikne tzv. relativní kód (s příponou.obj). V případě, že se v programu vyskytnou formální chyby, je nutné je opravit a kód znovu zkompilovat.
