@@ -2,7 +2,7 @@
 layout: page
 grand_parent: Maturita
 parent: Ústní maturita
-title: Ústní maturita čeština
+title: Ústní maturita Čeština
 description: Rozbory knih k maturitě
 has_children: false
 ---
