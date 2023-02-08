@@ -1,6 +1,6 @@
 ---
 layout: page
-title: O myších a lidech
+title: Maryša
 description: Kniha č.45 - O myších a lidech
 has_children: false
 nav_exclude: true
@@ -26,11 +26,11 @@ nav_exclude: true
 - **Literární žánr:** Tragédie
 - **Kompozice:** Chronologická
 - 5 dějství/jednání/aktů:
-    - 1. Nástínění tématu (jednání Lízala s Vávrou, odchod Francka na vojnu)
-    - 1. Přemlouvání Maryši k sňatku (Pochopení pouze od babičky)
-    - 1. Svatba, Francek se vrací z vojny, otec přesvědčuje Maryšu aby od Vávry utekla (Mezi 2. a 3. dějstvím 2roky !)
-    - 1. Francek přesvědčuje Maryšu aby s ním utekla, dějství se končí výstřely
-    - 1. Smrt Vávry, přiznání Maryši
+     1. Nástínění tématu (jednání Lízala s Vávrou, odchod Francka na vojnu)
+     1. Přemlouvání Maryši k sňatku (Pochopení pouze od babičky)
+     1. Svatba, Francek se vrací z vojny, otec přesvědčuje Maryšu aby od Vávry utekla (Mezi 2. a 3. dějstvím 2roky !)
+     1. Francek přesvědčuje Maryšu aby s ním utekla, dějství se končí výstřely
+     1. Smrt Vávry, přiznání Maryši
 
 - Sociální kritické drama
 - Řeší se zde společenské předsudky
