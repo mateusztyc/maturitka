@@ -54,11 +54,183 @@ nav_exclude: true
     - zjednodušení příkazů (instrukcí)
     - zrychlení samostatného zpracování instrukcí
     - více jednoduchých po sobě následujícíh instrukcí místo složitých instrukcí vykonávající složité operace (CISC)
-### Acron Archimedes
+
+#### Acron Archimedes
 - První PC vybavený ARMem. Projekt byl bohužel neúspěšný -> firma krachla
-### Newton MessagePad
+
+#### Newton MessagePad
 - Postaven na ARM procesoru (ARM 610 RISC)
 - Newton OS
 - Osobní digitální asistent od firmy Apple(1993)
+
 ### Arm Holdings
-- 
+- Britská společnost založena 1990
+- Vyvíjí a následně licencuje své technologie
+    - Drží duševní vlastnictví
+    - Samotné procesory nevyrábí
+        - Vyrábí/staví konkrétní modely až samotní výrobci
+        - Apple, Nvidia, Qualcomm, Samsung,…
+
+### ARM
+- Advanced Risc machine (acron risc machine)
+- 32/64 bit architektury označovány ARMvX
+    - Názvy jader jsou označovány jako Cortex
+        - Cortex-A55 -> ARMv8.2
+        - tex-M4 -> ARMv7
+- Nejrozšířenější architektura mikroprocesorů
+    - Ročně vyrobeno přes cca 50 miliard
+    - Mobily, tablety, přenosné herní konzole, ...
+    - Routery, televize, automobilovém průmysl, …
+- **big.LITTLE architektura**
+    - V rámci jednoho pouzdra jsou obsaženy jak výkonné (big) čipy, tak ty úsporné (LITTLE)
+    - Čipy mohou být aktivována jednotlivě
+    - Rozložení výkonu (video, email, …)
+- Load/Store architektura
+    - S pamětí pracují pouze instrukce typu load a store
+    - Všechny ostatní instrukce pracují s vnitřními registry
+        - Operandy apod. jsou nachystány do těchto registrů
+    - Rozdělení na dvě kategorie
+        - Práce s pamětí (load/store)
+        - Práce s registry a ALU
+    - **Výkon** = V dnešní době dostatek výkonu pro zastoupení PC
+        - Huawei Mate 20 Pro a Huawei Dock
+        - Samsung Galaxy Note 9 a Samsung DexPad
+
+### ARM jako součást SoC
+- System on Chip – „vše“ na jednom čipu
+- **Integruje:**
+    - Grafické jádro
+    - Operační paměť
+    - Síťový čip
+    - I/O rozhraní
+    - Modul pro komunikaci v mobilní síti
+    - Modem, ...
+- **Výhody**:
+    - Levnější výroba
+    - Nižší spotřeba
+    - Vysoká míra integrace
+- Malá možnost HW konfigurace
+
+## STM32F4
+- STM32F407VGT6
+    - TM32F407G-DISC1
+- 32-bit ARM Cortex M4 s FPU
+    - RISC architektura
+    - 5ti stupňový pipeline
+- 1MB Flash
+- 192+4 KB RAM
+- Memory protection unit
+- CLK až 168 MHz
+- Vnitřní 16 MHz nebo 32 kHz RC
+- Debug nástroj ST-LINK/V2
+- **Podpora pamětí typu:**
+    - Compact Flash, NAND, NOR, SRAM, PSRAM
+- 3x 12b A/D
+- 2x 12b D/A
+- **Podpůrné obvody:**
+    - DMA, Watchdog, PLL, PWM
+- 14 časovačů
+    - 16/32b
+- 140 I/O pinů s možností přerušení
+- 3x I2C a SPI
+- 4x USART
+- Podpora USB 2.O
+- Síťová karta 10/100 Mb/s
+    - DMA
+- Skutečný generátor náhodných čísel
+- Výstup 3 nebo 5 V
+- 8x LED
+    - 4x uživatelské (PD12 - PD15)
+- 2x tlačítko
+    - Uživatelské (modré) a reset (černé)
+- Porty A-K
+    - Pro uživatele: A-E
+- Napájení 5V
+    - USB nebo externí zdroj
+- Včetně programátoru
+    - Možnost programovat i jiné desky
+
+### Sběrnice
+#### AHB
+- Advanced High-performance Bus
+    - Nástupce ASB (první generace AMBA)
+- Pro velmi rychlou komunikaci mezi:
+    - CPU
+    - RAM
+    - DMA
+- Podpora dávkového přenosu dat
+- Most pro komunikaci s APB
+
+#### APB
+- Advanced Peripheral Bus
+- Nabízí jednoduchý interface pro připojení pomalejší a low-power periférií k procesoru
+    - Čaovače
+    - UART
+    - I2C, SPI
+- Periférie komunikují s CPU prostřednictvím mostu mezi AHB a APB
+
+#### RCC->AHB1ENR – AKTIVACE PŘISLUŠNÉHO PORTU
+
+#### GPIOx->MODER – nastavení modu příslušného portu
+
+#### GPIOx->IDR – vstup dat
+
+#### GPIOx->ODR – výstup dat
+
+#### GPIOx->BSRR – nastavení/resetovaní bitu
+
+## STM32F4 - školní kit
+- LCD 8x2
+- Klávesnice 4x3
+- 4x LED
+    - Opačná logika než u vestavěných LED
+    - Port E (piny 12-15)
+- COM port
+- Fotorezistor (10 kOhm)
+- Reproduktor
+    - Pod klávesnicí, né u všch
+
+## Keil uVision 5
+- uint8_t;
+    - Unsigned integer 8 bit
+    - _t -> standart pro "type" (typedef)
+- 1UL
+    - Unsigned long
+
+## Časování
+### Zdroje CLK
+- Možnost celkem 3 různých zdrojů CLK
+    - HSI oscilátor CLK
+    - HSE oscilátor CLK
+    - PLL
+- HSI clock (High-Speed Internal clock)
+    - Signál je generován z interního 16 MHz RC oscilátoru
+    - Není potřeba žádných dalších externích součástek
+    - Není tak přesný jako externí zdroj CLK
+    - Možnost sw kalibrace (využití některého z TIMerů)
+    - Po restartu je vybrán automaticky jako systémový CLK
+- Využití: Ethernet, USB, I2C, UART, systémové hodiny, …
+
+### System Tick Timer - SysTick
+- Jednoduchý interní systémový časovač
+- Součástí jádra Cortex
+- Při odečtení vyvolá přerušení
+    - Periodicky odčítá jedničku od uživatelem definované hodnoty
+- Využití pro:
+    - Pravidelná kontrola sériového kanálu, klávesnice, tlačítek
+    - Práce s LCD – časování pro driver
+    - Nebo pro začátek blikání LED
+- Není možné přidělit prioritu, ani jinak nastavovat
+    - O vše se stará SysTick_Config()
+- SysTick_Config(“hodnota“);
+    - Funkce pro konfiguraci přerušení od SysTick
+    - Číslo musí být menší než 224 -> 16 777 216
+    - Nejjednodušší zadat fJádra = 16 MHz (po resetu)
+        - Podtečení každou 1s
+- Nutno však definovat rutinu pro obsluhu přerušení SysTick_Handler()
+- SystemCoreClockUpdate();
+    - Nahrání frekvence jádra do SystemCoreClock
+- RCC->CFGR & RCC_CFGR_SWS
+    Zjíštění zdroje CLK
+
+### TIM6, TIM7 - základní časovače
