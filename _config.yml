@@ -53,7 +53,8 @@ defaults:
       path: ''
       type: modules
     values:
-      layout: module
+      layout: page
+      subpath: './assets/images/'
   - scope:
       path: ''
       type: schedules
