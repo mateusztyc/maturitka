@@ -5,6 +5,7 @@ description: Otázka č.1 - Programovací jazyk C
 has_children: false
 nav_exclude: true
 image1: /assets/images/kompiler.jpg
+images: /assets/images/
 ---
 # Programovací jazyk C
 ## 1. Vývojové prostředí Dev C++, compiler a linker
@@ -21,7 +22,7 @@ Pokud spustitelný program nefunguje podle našich představ - dává např. šp
 Datový typ označuje druh dat, proměnná je paměťový prostor. Při vytváření (definici) proměnné musíme stanovit její datový typ.
 
 Typ žádné hodnoty - (Void) - Podprogram nic nevrací
-![datove_typy](/assets/tabulka1.jpg)
+![datove_typy]({{page.images/tabulka1.jpg | relative_url}})
 
 ### Inicializace vs deklarace
 Pokud chceme nějakou proměnnou použít, musíme ji nejdříve deklarovat. Deklarace proměnné udává její název a datový typ. Je vhodné uvádět deklarace na začátku bloku příkazů. (Blok příkazů je posloupnost příkazů uzavřená v { }).
