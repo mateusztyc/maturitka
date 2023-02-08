@@ -6,6 +6,7 @@ has_children: false
 nav_exclude: true
 image1: /assets/images/kompiler.jpg
 image2: /assets/images/tabulka1.jpg
+image3: /assets/images/ukazatel1.jpg
 ---
 # Programovací jazyk C
 ## 1. Vývojové prostředí Dev C++, compiler a linker
@@ -293,7 +294,7 @@ Pro použití funkcí pro načtení a výpis musíme vložit hlavičkový soubor
  - Deklarujeme ho jako ukazatel na určitý datová typ
  - Obsahem ukazatele je adresa v paměti
  - Při práci s ukazatelem nás ve většině případů zajímá hodnota uložená na dané adrese
-![ukazatel](/assets/images/ukazatel1.jpg)
+![ukazatel]({{page.image3 | relative_url}})
  - Proměnná uk je ukazatel, hodnota v něm uložená je 25, jedná se o adresu, na které je uložená hodnota, se kterou budeme pracovat, na absolutní adrese 25 je hodnota 18, ukazatel ukazuje na hodnotu 18, ale sám má hodnotu 25
  - *Deklarace ukazatele*
 
