@@ -26,5 +26,20 @@ nav_exclude: true
 - Alegorie a antiutopie
     - 1984
     - "Farma zvířat"
-        - Alegorická bajka
+        - Alegorická bajka/román
+        - do roku 1946 zákaz publikace i v Británii
+        - od roku 1946 propaganda proti rusku
+        - **Alegorie:**
+            - Farma zvířat => Rusko
+            - farmář Jones => Car
+            - prasata => vládnoucí vrstva
+                - Major => Lenin
+                - Napoleon => Stalin = diktátor
+                - Pištík => propagátor
+                - Kuliš => Trockij
+                - Kůň Boxer => "budovatel"
+                - Psi => KGB
+                - slepice => vzbouření, poprava
+                - ovce => vymleté mozky
+                - stavba mlýna => elektrifikace/industralizace Ruska
     
