@@ -234,3 +234,10 @@ nav_exclude: true
     Zjíštění zdroje CLK
 
 ### TIM6, TIM7 - základní časovače
+- 16 bit časovače respektive vzestupné čítače s možností auto-reload
+- Součástí je i 16 bit programovatelný prescaler
+    - Využívaná jako dělička frekvence
+- Při přetečení nebo auto-reload může být generováno přerušení nebo signál pro DMA
+- Možnost využít také pro řízení DAC
+    - Vnitřně spojeny s DAC prostřednictvím „trigger output“
+    
