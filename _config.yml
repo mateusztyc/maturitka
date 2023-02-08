@@ -69,7 +69,7 @@ defaults:
       path: ''
       type: maturita
     values:
-      layout: minimal
+      layout: page
       subpath: './assets/'
 
 compress_html:
