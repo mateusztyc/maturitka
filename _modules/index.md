@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: module
 nav_order: 4
 title: Maturita-test
 description: Otázky, odpovědi, materiály k maturitě
