@@ -45,9 +45,9 @@ collections:
 defaults:
   - scope:
       path: ''
-      type: staffers
+      type: page
     values:
-      layout: staffer
+      layout: page
       subpath: './assets/images/'
   - scope:
       path: ''
