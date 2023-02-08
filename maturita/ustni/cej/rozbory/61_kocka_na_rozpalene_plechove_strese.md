@@ -22,6 +22,7 @@ nav_exclude: true
             - uteče z domova k sestře
              - její muž jí brutálně znásilnil
     
+    
     - Kočka na rozpálené plechové střeše
         - metafora
         - hra o třech dějstvích
