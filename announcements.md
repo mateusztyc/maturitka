@@ -1,14 +1,14 @@
 ---
 layout: page
 nav_order: 1
-title: Aktuality
+title: Updates
 nav_exclude: false
-description: Aktualní příspěvky
+description: Updaty
 ---
 
 # Nástěnka
 
-Aktuální informace ke změnám ve výuce a jiné volatilní informace.
+Aktuální informace ke změnám na webu
 
 {% assign announcements = site.announcements | reverse %}
 {% for announcement in announcements %}
