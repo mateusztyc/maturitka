@@ -6,3 +6,5 @@ has_children: false
 nav_exclude: true
 ---
 # Přenos dat, rozdělení pamětí a jejich organizace
+
+cusan
