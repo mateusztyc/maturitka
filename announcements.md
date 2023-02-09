@@ -1,12 +1,12 @@
 ---
 layout: page
 nav_order: 1
-title: Updates
+title: Update Log
 nav_exclude: false
-description: Updaty
+description: Updates
 ---
 
-# Nástěnka
+# Update log
 
 Aktuální informace ke změnám na webu
 
