@@ -84,6 +84,7 @@ sig2: /assets/images/sig2.jpg
 ![Dig1]({{page.dig1 | relative_url}})
 
 - Nespojitý v čase ani v amplitudě
+
 ![Dig2]({{page.dig2 | relative_url}})
 
 - Je tvořen posloupnosti vzorků, které mohou nabývat pouze omezeného počtu hodnot
