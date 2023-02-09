@@ -24,7 +24,7 @@ nav_exclude: true
     - ruší spolupráci
         - nechce se podílet na propagandě
 - Alegorie a antiutopie
-    - 1984
+    - ["1984"](/maturitka/maturita/ustni/cej/rozbory/57_r1984/)
     - "Farma zvířat"
         - Alegorická bajka/román
         - do roku 1946 zákaz publikace i v Británii
