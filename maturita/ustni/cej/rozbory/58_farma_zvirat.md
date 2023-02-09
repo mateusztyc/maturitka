@@ -45,7 +45,7 @@ flg: /assets/images/zv.png
     - [1984](/maturitka/maturita/ustni/cej/rozbory/57_r1984/)
 
 # Farma zvířat 
-![vlajka]({{page.flg | realite_url}})  
+![vlajka]({{page.flg | relatite_url}})  
 - Alegorická bajka/román/povídka (zvířata představují nějake vlastnosti,kapitoly,kratší) - antiutopie(spravedlivý/ideální svět), alegorie(přirovnání zvířecích druhů)
 - do roku 1946 zákaz publikace i v Británii
 - od roku 1946 propaganda proti Rusku
