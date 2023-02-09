@@ -95,3 +95,4 @@ nav_exclude: true
             - zákaz zpívaní hymny(strach o převrat proti zvířatům)
             - větrný mlýn - se sám zničil při bouřce v noci(Napoleon shodí vinu na Kuliše což není pravda ale některá zvířata tomu věří), pak ho znova postaví a zniči ho lidé(Frederick - výbušnina)
             - jablko a mléko jenom pro prasata(jedno z pravidel to zakazovalo)
+            - dalši pravidla si prasata taky pozmění nebo je dokonce zruši/smažou => jsou napsány na stodole
