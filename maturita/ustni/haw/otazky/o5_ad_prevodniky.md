@@ -4,7 +4,7 @@ title: A/D převodníky
 description: Otázka č.5 - A/D převodníky
 has_children: false
 nav_exclude: true
-princip: /assets/images/princip.jpg
+princip: /assets/images/pincip.jpg
 vzork: /assets/images/vzork.jpg
 kvant: /assets/images/kvant.jpg
 kod: /assets/images/kod.jpg
