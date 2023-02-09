@@ -89,14 +89,14 @@ xnor: /assets/images/xnor.jpg
         - Programable Array Logic
         - Oproti PLA nemají obvody součtovou matici a výstupy jsou fixovány do součtových hradel OR -> omezený počet vstupů
         - Přímo by bylo možné realizovat pouze funkce s maximálně 8 součinovými termy
-    ![PAL]({{page.pal1 | relative_url}}) ![PAL2]({{page.pal2 | relative_url}})
+    - ![PAL]({{page.pal1 | relative_url}}) ![PAL2]({{page.pal2 | relative_url}})
     - **PLA**
         - Programmable Logic Array
         - Druh PLD určený k realizaci logických obvodů
         - Obsahuje sadu vzájemně propojených programovatelných polí AND, vedoucí k programovatelným polím OR, které mohou být případně doplněny za účelem vytvoření výstupu
         - mají 2N hradel AND pro N vstupních proměnných a pro M výstupů z PLA by mělo být M hradel OR, každé s programovatelným
 
-    ![PAL]({{page.pla1 | relative_url}}) ![PAL2]({{page.pla2 | relative_url}})
+    - ![PAL]({{page.pla1 | relative_url}}) ![PAL2]({{page.pla2 | relative_url}})
 
     - **GAL**
         - Generic Array Logic
@@ -104,7 +104,7 @@ xnor: /assets/images/xnor.jpg
         - inovace obvodu PAL
         - Možnost smazání a přeprogramování
 
-    ![GAL]({{page.gal | relative_url}})
+    - ![GAL]({{page.gal | relative_url}})
 
     - **CPLD = COMPLEX PLD**
         - Obsahují více SPLD obvodů na jednom čipu s důvodu realizace složitějších funkcí
@@ -112,19 +112,19 @@ xnor: /assets/images/xnor.jpg
         - Většina pinů je univerzálních
         - Obvod COOLRUNNER
 
-    ![CPLD]({{page.cpld | relative_url}})
+    - ![CPLD]({{page.cpld | relative_url}})
 
     - **FPGA = FIELD PROGRAMABLE GATE ARRAY**
         - Mají nejobecnější strukturu a obsahují nejvíce logiky => nejsložitější
         - Makro buňky jsou nahrazeny logickým blokem
         - Obsahují až 6 milionu hradel (AND)
 
-        ![FPGA]({{page.fpga1 | relative_url}})
+        - ![FPGA]({{page.fpga1 | relative_url}})
 
         - Vstupně výstupní bloky (IOB) obsahují registry, budiče, multiplexory a ochranné obvody
         - Jednotlivé bloky (LB) jsou propojeny navzájem globální propojovací maticí (=GPM)
 
-        ![FPGA]({{page.fpga2 | relative_url}})
+        - ![FPGA]({{page.fpga2 | relative_url}})
 
         - Některé signály sousedících bloků je možné propojit přímo bez použití GPM -> menší zpoždění a umožňují tak realizovat například rychlé obvody šíření přenosu, což je nezbytné pro sčítačky nebo násobičky
         - Kromě základních bloků IO a LB obsahuje většina FPGA obvodů rychlé synchronní statické RAM paměti a další specifické bloky (HW násobičky; PLL, DLL)
@@ -143,7 +143,7 @@ xnor: /assets/images/xnor.jpg
                 - Násobička
             - DCM – digital CLK manager, rozvod CLK ke všem CLB
             
-            ![ARCHI]({{page.archi1 | relative_url}})
+            - ![ARCHI]({{page.archi1 | relative_url}})
 
 ### Makro buňka vs. Logický blok
 - #### Makrobuňka
