@@ -4,7 +4,7 @@ title: Programovatelné a neprogramovatelné logické obvody
 description: Otázka č.3 - Pogramovatelné a neprogramovatelné logické obvody
 has_children: false
 nav_exclude: true
-plda: /aasets/images/plda.jpg
+image1: /aasets/images/plda.jpg
 ---
 # Programovatelné a neprogramovatelné logické obvody
 
@@ -22,4 +22,4 @@ plda: /aasets/images/plda.jpg
 - Prvky lze vzájemně propojit pomocí konfigurovatelné propojovací sítě
 - Několik desítek vertikálních a horizontálních vodičů
     - Jejich konfigurace pomocí programovatelných propojek v místě křížení vodičů
-![PLDA]({{page.plda | relitive_url}})
+![PLDA]({{page.image1 | relitive_url}})
