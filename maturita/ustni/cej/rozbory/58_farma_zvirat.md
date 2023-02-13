@@ -4,6 +4,7 @@ title: Farma zvířat
 description: Kniha č.58 - Farma zvířat
 has_children: false
 nav_exclude: true
+flg: /assets/images/zv.png
 ---
 # George Orwell - Farma zvířat
 
@@ -43,7 +44,8 @@ nav_exclude: true
         - Alegorická bajka
     - [1984](/maturitka/maturita/ustni/cej/rozbory/57_r1984/)
 
-# Farma zvířat   
+# Farma zvířat 
+![vlajka]({{page.flg | relatite_url}})  
 - Alegorická bajka/román/povídka (zvířata představují nějake vlastnosti,kapitoly,kratší) - antiutopie(spravedlivý/ideální svět), alegorie(přirovnání zvířecích druhů)
 - do roku 1946 zákaz publikace i v Británii
 - od roku 1946 propaganda proti Rusku
