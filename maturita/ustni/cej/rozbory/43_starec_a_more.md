@@ -24,6 +24,17 @@ nav_exclude: true
     - román Komu zvoní hrana(1940) - popisuje pravdivé dramatické okamžiky španělské občanské války, kritika ho označila za jeho nejlepší dílo a měl obrovský úspěch u čtenářů
     - Stařec a moře(1952) - vypráví příběh o kubánském rybáři Santiagovi
 
+# Literárně historický kontext
+- literatura 1. poloviny 20. století
+- meziválečná literatura
+- patří do tzv. ztracené generace
+    - generační skupina amerických prozaiků, básníků a dramatiků, kteří byli v mládí
+    poznamenaní hrůznou zkušeností 1. SV
+    - ve své tvorbě vyjadřují pocity vojáků, kteří se vrátili duševně zmrzačeni → tito
+lidé nebyli schopni poté nalézt smysl života, trpěli depresemi, pocitem odcizení
+- Steinback, Fitzgerald, Hemingway - USA
+- Hašek, Remarque - o válce
+
 # Stařec a moře
 - **Literární druh:** Epika, próza
 - **Literární žánr:** novela
@@ -38,13 +49,3 @@ nav_exclude: true
     - vše nepodstatné je z něj vypuštěno, nenajdeme v něm tedy žádné rozsáhlé úvahy ani popisy
     - je zde popsán pouze základ celého příběhu
     - čtenář tedy musí využít vlastní představivost a dokreslit si tak zbytek prožitku
-# Literárně historický kontext
-- literatura 1. poloviny 20. století
-- meziválečná literatura
-- patří do tzv. ztracené generace
-    - generační skupina amerických prozaiků, básníků a dramatiků, kteří byli v mládí
-    poznamenaní hrůznou zkušeností 1. SV
-    - ve své tvorbě vyjadřují pocity vojáků, kteří se vrátili duševně zmrzačeni → tito
-lidé nebyli schopni poté nalézt smysl života, trpěli depresemi, pocitem odcizení
-- Steinback, Fitzgerald, Hemingway - USA
-- Hašek, Remarque - o válce
