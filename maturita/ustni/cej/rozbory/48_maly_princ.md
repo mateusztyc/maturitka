@@ -24,8 +24,7 @@ nav_exclude: true
 - hospodářská krize vyústila v politiku appeasementu a Německo stále sílí.
 - společnost je ovlivněna zejména nástupem totalitních režimů a hospodářskou krizí
 - 1918-38 doba neklidného příměří mezi válkami, kniha vydána roku 1943
-- po celém kontinentu probíhají revoluce a o novém rozvržení Evropy rozhoduje
-Versaillský systém
+- po celém kontinentu probíhají revoluce a o novém rozvržení Evropy rozhoduje Versaillský systém
 # Malý princ
 - je to konfrontace světu dětí a dospělých(neupřímnost) 
 - děti fantazie, představivost, upřímnost
@@ -83,7 +82,8 @@ Versaillský systém
         - lampář
             - ten jediný Malého prince pochopil - jediný se nezabýval sám sebou
             - on jediný Malému princovi nepřipadál směšný
-        - zeměpisec - jenom sedí u stolu a píše nikde nechodí
+        - zeměpisec 
+            - jenom sedí u stolu a píše nikde nechodí
     - všichní jsou sami na planetkách
     - každá postava prezentuje 1 vlastnost, nejsou záporne => donutí nás uvažovat/zamyslet se nad něma(jejich vlastnosti)
     - Země - Afrika - had - zahrada růží - liška - výhybkář - obchodník
