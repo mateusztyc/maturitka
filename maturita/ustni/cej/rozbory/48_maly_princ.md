@@ -17,7 +17,6 @@ nav_exclude: true
     - Citadela
     - Noční let
     - Malý princ - sám ilustroval(obrázky)
-# Literárě historický kontext
 # Literárně historický kontext
 - francouzská literatura
 - francouzský realismus -> meziválečná próza => nenávist vůči válce, osobní děsivé prožitky z ní
@@ -26,7 +25,6 @@ nav_exclude: true
 - společnost je ovlivněna zejména nástupem totalitních režimů a hospodářskou krizí
 - 1918-38 doba neklidného příměří mezi válkami, kniha vydána roku 1943
 - po celém kontinentu probíhají revoluce a o novém rozvržení Evropy rozhoduje Versaillský systém
-# Malý princ
 # Malý princ
 - je to konfrontace světu dětí a dospělých(neupřímnost) 
 - děti fantazie, představivost, upřímnost
