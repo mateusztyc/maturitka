@@ -113,12 +113,112 @@ nav_exclude: true
         - Voláním přijímá jeden parametr (id procesu)
         - V případě, že není žádná potřeba, tak se uspí
     - Producent vs. Konzument - sleep/wakeup
-    |Běžící proces |Akce            |Výsledek   |
-    |:-------------|:---------------|:----------|
-    |Konzument     |Čtení count     |Ak = count |
-    |Producent     |Vložení položky 
-                    count ++, 
-                    Zjíštění, že jde 
-                    o první položku |count = 1, wakeup(konzument)|
-    |Komzument     |?Ak==0?         |sleep(konzument)|
-    |Producent     |Ukládá položky,?Ap==N?|Ap=count, sleep(producent)|
+        - *1 konzument, ale ještě nespí, signál je ztracený
+        - *2 konzument se uspí
+        - *3 producent se uspí, dokud konzument nesppotřebuje min 1.položku, konzument ale spí -> spí oba a napořád
+        - Řešením by byla proměnná, která by kontrolovala bdělost a kontrolovala se, než by šly spát, které se nastaví, že proces nespí, že proces nespí a nastaví wakeup
+        - Než by proces šel spát, tak by se podíval na proměnnoou, zda ten další proces spí
+
+## Semafory
+- Obecný synchronizační nástroj
+- Je poskytován OS a stará se o něj jádro OS
+- Nachází se na začátku kritické sekce a využívají se dvě operace
+    - Před vstupen do KS
+    - Po vykonání KS
+- Operace jsou atomické = proběhne celá
+- Implementace musí zaručit, že žádné dva procesy nebudou provádět operace nad stejným semaforem současně
+- Obecný semafor a binární semafor
+- **Obecný semafor**
+    - Jedná se o datovou strukturu obsahující celočíselný čítač a frontu čekajících procesů
+    - Operace nad semaforem mohou provádět pouze funkce:
+        - INIT
+            - Inicializuje semafor na nezápornou hodnotu, 1 – určuje, kolik procesů muže být voláno funkcí wait
+        - WAIT
+            - Snižuje hodnotu čitače
+            - Pokud je hodnota záporná, je proces blokován a zařazen do fronty čekajících
+        - SIGNAL
+            - Zvyšuje hodnotu čitače
+            - Pokud je ve frontě nějaký proces, je odblokován, může vstoupit do KS
+- **Binární semafor**
+    - MUTEX
+    - Semafor je implementován pomocí služeb lock a unlock
+    - Lock zajistí hodnotu semaforu a nastaví jej – musí být implementováno jako nepřerušitelné
+    - Pokud již je semafor nastaven (nějaký proces je v kritické sekci), uloží identifikační číslo aktivního procesu do fronty semaforu a suspenduje ho (proces suspenduje sám sebe)
+    - Unlock nejprve zkontroluje stav fronty, pokud je prázdná, nastaví semafor na zelenou
+    - Každý proces tak vyvolá při vstupu do kritické sekce lock, při opouštění unlock
+    - Proces na začátku volá funkci lock a zjistí nastavení semaforu (TRUE/FALSE)
+    - Pokud není nastaven, přepne na TRUE a vstoupí do KS
+    - Pokud by byl nastaven, zařadí se do fronty čekající procesů
+    - Pokud by byl nastaven, zařadí se do fronty čekajících procesů
+    - Když opouští KS, volá funkci unlock a zjišťuje, jestli někdo není ve frontě a mění hodnotu semaforu, pokud ano, je vyjmut a vstoupí do KS, ale hodnota semaforu se nezmění, odblokování semaforu nastavuje poslední proces
+
+## Problémy semaforů
+- **Deadlock**
+    - Dva či více procesů čekající na událost, kterou může vyvolat proces, který taky čeká
+- **Starvation**
+    - Stárnutí
+    - Dva procesy si vyměňují přístup ke sdílenému prostředku, ale třetí proces se k němu nedostane
+- **Aktivní zablokování**
+    - Live lock
+    - Procesy se navzájem snaží vyhovět, kdo půjde první
+- **Inverze priorit**
+    - Tři procesy, z nichž dva budou z vyšší prioritou a jeden z nižší
+    - Proces z nižší prioritou pracuje se sdíleným prostředkem
+    - Jeden z procesem H chce taky pracovat se sdíleným prostředkem, další proces typu H sdílený prostředek nepotřebuje, má přednost
+    - L nemůže uvolnit sdílený prostředek (bude čekat na H)
+
+## Klasické synchronizační problémy
+- **Producent vs. Konzument**
+    - řeší omezenou velikost bufferu
+- **Čtenáří vs. Písaři**
+    - Řeší souběžné čtení a zápis dat
+    - Přednost mají čtenáři
+        - Žádný čtenář nečeká, není-li sdílený prostředek využíván písařem
+        - Čtenář čeká na opuštění KS písařem, pokud se tak nestane, hrozí stárnutí
+    - Přednost mají písaři
+        - mohou modifikovat sdílený prostředek, stárnutí čtenářů
+- **Večeřící filozofové**
+    - Zpracovávat se můžou pouze dva procesy, které nesmí být vedle sebe
+    - Buď přemýšlí, nebo večeří
+    - K večeření potřebují dvě vidličky (sdílený prostředek)
+    - Problém nastane, když všichni chtějí sdílený prostředek najednou
+    - Řešením je reprezentovat každou vidličku jako semafor
+    - Každý filozof vezme vidličku provedením funkce čekej na daný semafor
+    - Odložením vidličky se provádí funkce signal
+- **Spící holič**
+    - Jeden holič, jedno křeslo, čekárna o velikosti n
+    - Pokud nikdo není v čekárně, holič spí
+    - Po obsloužení zákazníka, jde zkontrolovat čekárnu
+    - Pokud je někdo v čekárně, vezme zákazníka a začne ho stříhat
+    - Pokud nikdo není v čekárně, uspí se
+    - Zákazník, který přijde jde rovnou k holiči
+    - Pokud má volno, vzbudí holiče
+    - Pokud je zaneprázdněn, jde do čekárny a zjistí stav
+    - Pokud ve v čekárně volno, posadí se, pokud ne, odejde
+    - Muže nastat situace, že holič spí, ale někdo je v čekárně
+    - To nastane v případě, že holič jde do čekárny a zákazník k holiči a minou se, oba zjistí, že tam nikdo není, zákazník jde do čekárny a holič jde spát
+    - Další problém nastane v případě, že holič stříhá a proces vejde dovnitř, zjistí, že je zaneprázdněn a mezitím ale holič dostříhá a jde se podívat do čekárny a dojde tam rychleji než zákazník, zjistí, že tam nikdo není a jde spát
+- Problematika večeřících filozofů prodrobně
+    - Představme si pět filozofů, kteří tráví svůj život přemýšlením a jezením. Filozofové sdílejí jeden společný kulatý stůl, kolem kterého je pět židlí, každá pro jednoho filozofa. Uprostřed stolu je miska rýže a u kraje je rozloženo pět tyček k pojídání rýže tak, jak ukazuje následující obrázek. Když filozof přemýšlí, není v jakémkoliv spojení se svými spolustolovníky. Čas od času na filozofa přijde hlad a pokusí se získat dvě tyčky, které jsou vedle něj (ty mezi ním a jeho pravým a levým sousedem). Filozof může v jednu chvíli sebrat pouze jedno tyčku. Stejně tak nemůže tyčku vytrhnout z ruky jeho souseda, pokud ji tento právě používá. V okamžiku, kdy filozof získal obě tyčky. Může začít konzumaci ryze. Když dojí, odloží tyčky na jejich původní místa a pokračuje v přemýšlení. (Hygienické aspekty problému neuvažujeme!)
+    - Problém hladových filozofů je považován za klasicky synchronizační problém ne pro jeho praktické využití, ani proto, že by počítačový specialisté neměli rádi filozofy, ale proto, že je to zástupce velké třídy problémů souběžného řízení (concurrency control problems). Je to jednoduchý příklad situace, kdy různé procesy potřebují alokovat různé zdroje a může dojit k zablokování i umoření procesu.
+    - jednoduchým řešením je reprezentovat každou tyčku jak semafor
+    - každý filozof vezme tyčku provedením funkce cekej na daný semafor
+    - odložení tyčky se provádí funkcí signál
+    - **repeat**
+            cekej(tycka(i));
+            cekej(tycka(i+1 mod 5));
+                ...
+                jedeni
+                ...
+            signal(tycka(i));
+            signa(tycka(i+1 mod 5));
+                ...
+                premyslení
+                ...
+            until false
+     - řešení tohoto problému je vícero:
+         - 1.Pustit ke stolu maximálně 4 filozofy.
+        - 2.Dovolit filozofovi vzít tyčku pouze tehdy, má-li k dispozici obě.
+    - Řešit problém asymetricky, tj. liší filozofové by nejdříve sebrali levou tyčku a potom pravou. Sudí filozofové naopak nejdříve pravou a potom levou.
+        - uspokojivé řešení problému musí také garantovat, že žádný z filozofu nebude umořen k smrti hlady
+        - je-li odstraněn deadlock (možnost zablokování) některým z výše uvedených postupu, umoření nastat nemůže
