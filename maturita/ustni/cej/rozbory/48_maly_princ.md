@@ -17,6 +17,7 @@ nav_exclude: true
     - Citadela
     - Noční let
     - Malý princ - sám ilustroval(obrázky)
+    
 ## Literárně historický kontext
 - francouzská literatura
 - francouzský realismus -> meziválečná próza => nenávist vůči válce, osobní děsivé prožitky z ní
