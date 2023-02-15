@@ -7,7 +7,7 @@ nav_exclude: true
 ---
 # Antoine de Saint-Exupéry - Malý princ
 
-### Antoine de Saint-Exupéry (1900-1944)
+## Antoine de Saint-Exupéry (1900-1944)
 - francouzský spisovatel, letec, filozof a humanista
 - studoval na jezuitském gymnáziu a již v dětství skládal různé básně a zajímal se o letadla
 - vždy se zajímal o literatur, rád o ní diskutoval a poté se dostal i do společnosti literárních nadšenců, kde se seznámil s Louisou Vilmorinovou, kterou si následně vzal
@@ -17,7 +17,7 @@ nav_exclude: true
     - Citadela
     - Noční let
     - Malý princ - sám ilustroval(obrázky)
-# Literárně historický kontext
+## Literárně historický kontext
 - francouzská literatura
 - francouzský realismus -> meziválečná próza => nenávist vůči válce, osobní děsivé prožitky z ní
 - dochází k rozšiřování fašismu a k souboji mezi demokracií a totalitními režimy
