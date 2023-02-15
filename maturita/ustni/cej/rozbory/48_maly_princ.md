@@ -26,6 +26,7 @@ nav_exclude: true
 - společnost je ovlivněna zejména nástupem totalitních režimů a hospodářskou krizí
 - 1918-38 doba neklidného příměří mezi válkami, kniha vydána roku 1943
 - po celém kontinentu probíhají revoluce a o novém rozvržení Evropy rozhoduje Versaillský systém
+
 # Malý princ
 - je to konfrontace světu dětí a dospělých(neupřímnost) 
 - děti fantazie, představivost, upřímnost
