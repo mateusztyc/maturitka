@@ -299,12 +299,12 @@ nav_exclude: true
 |**P3**    |**6** |**1** |14    |8      |7     |13    |
 |**P4**    |**8** |**3** |17    |9      |6     |14    |
 
-AT (Arriving Time) – příchod procesu
-BT (Burst Time) – délka trvaní procesu
-CT (Complition Time) – doba ukončení
-TAT (Turn Around Time) – čas obrátky
-WT (Waiting Time) – doba čekání
-VT (Visiting Time) – kdy poprvé se objevil proces na procesoru
-TAT = CT – AT
-WT = TAT – BT
-VT = dá se zjistit
+- {_AT (Arriving Time) – příchod procesu_: .fs-2}
+- _BT (Burst Time) – délka trvaní procesu_
+- _CT (Complition Time) – doba ukončení_
+- _TAT (Turn Around Time) – čas obrátky_
+- _WT (Waiting Time) – doba čekání_
+- _VT (Visiting Time) – kdy poprvé se objevil proces na procesoru_
+- _TAT = CT – AT_
+- _WT = TAT – BT_
+- _VT = dá se zjistit_
