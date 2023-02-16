@@ -4,6 +4,12 @@ title: Řízení vnější paměti
 description: Otázka č.9 - Řízení vnější paměti
 has_children: false
 nav_exclude: true
+image1: /assets/images/9_fcfs.jpg
+image2: /assets/images/9_sstf.jpg
+image3: /assets/images/9_scan.jpg
+image4: /assets/images/9_cscan.jpg
+image5: /assets/images/9_look.jpg
+image6: /assets/images/9_clook.jpg
 ---
 # Řízení vnější paměti
 
@@ -125,6 +131,8 @@ nav_exclude: true
 |8     |65        |59   |
 |9     |67        |2    |
 
+![kompiler]({{page.image1 | relative_url}})
+
 ### SSTF
 - Shortest Seek Time First
 - Požadavek, který je nejblíže k hlavičkám má přednost a bude obsloužen jako první
@@ -144,6 +152,8 @@ nav_exclude: true
 |8     |124       |2    |
 |9     |183       |59   |
 
+![kompiler]({{page.image2 | relative_url}})
+
 ### SCAN
 - Hlava jezdí ze strany na stranu (od kraje, ke kraji) a postupně obsluhuje požadavky
 - Hlavička disku začíná na začátku a přesunuje se na konec, zatímco zpracovává požadavky, které jsou po cestě, pak se vrací zpět
@@ -160,6 +170,8 @@ nav_exclude: true
 |8     |124       |2    |
 |9     |183       |59   |
 
+![kompiler]({{page.image3 | relative_url}})
+
 ### CSCAN
 - Varianta SCAN, která se liší v tom, že když hlavička dojede na konec, nevrací se zpět, ale přesune se opět na začátek (tam kde začal) a pokračuje ve zpracovávání
 
@@ -174,6 +186,8 @@ nav_exclude: true
 |7     |183       |59     |
 |8     |14        |30(229)|
 |9     |37        |23     |
+
+![kompiler]({{page.image4 | relative_url}})
 
 ### LOOK
 - Upravená metoda SCAN
@@ -192,6 +206,8 @@ nav_exclude: true
 |8     |37        |146  |
 |9     |14        |23   |
 
+![kompiler]({{page.image5 | relative_url}})
+
 ### CLOOK
 - Vylepšená metoda LOOK
 - Hlava začíná na jedné straně u prvního požadavku a pohybuje se na konec k druhému požadavku, zatímco postupně zpracovává požadavky, které jsou po cestě
@@ -208,6 +224,9 @@ nav_exclude: true
 |7     |183       |59   |
 |8     |14        |169  |
 |9     |37        |23   |
+
+
+![kompiler]({{page.image6 | relative_url}})
 
 ## HDD/SSD
 
