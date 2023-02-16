@@ -12,6 +12,10 @@ image5: /assets/images/4_i2c.jpg
 image6: /assets/images/4_spi.jpg
 image7: /assets/images/4_rs232.jpg
 image8: /assets/images/4_rs232-1.jpg
+image9: /assets/images/4_ieee1284.jpg
+image10: /assets/images/4_mem_map.jpg
+image11: /assets/images/4_delka_dat_slov.jpg
+image11: /assets/images/4_hloub_mem.jpg
 ---
 # Přenos dat, rozdělení pamětí a jejich organizace
 
@@ -246,6 +250,9 @@ image8: /assets/images/4_rs232-1.jpg
 
 
 ## Sběrnice IEEE 1284
+
+![kompiler]({{page.image9 | relative_url}})
+
 - LPT = Line Protector Terminal
 - Paralelní port
     - Umožňuje přenášet více bitů v jednom CLK
@@ -406,18 +413,27 @@ image8: /assets/images/4_rs232-1.jpg
 - Udává se v bitech, nebo spíš bajtech
 
 ## Hloubka paměti
+
+![kompiler]({{page.image12 | relative_url}})
+
 - Počet adres, se kterýma je možno pracovat
     - Počet všech adres v paměti
     - Počet slov paměti -> jednotka: slovo
 - Možnost rozšíření paralelním zapojením paměťových čipů
 
 ## Délka datového slova
+
+![kompiler]({{page.image11 | relative_url}})
+
 - Šířka datové sběrnice
 - Počet bitů, které mohou být paralelně uloženy na adrese
 - Řídí se délkou slova CPU
 - Možnost rozšíření sériovým zapojením paměťových čipů
 
 ## Organizace paměti - paměťová mapa
+
+![kompiler]({{page.image10 | relative_url}})
+
 - Zápis kapacity paměti – hloubka a délka datového slova
 16k(2k x 8)
 - Informace je uspořádaná do N paměťových míst, které se označují jako slova s n bity
