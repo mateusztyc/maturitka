@@ -4,6 +4,10 @@ title: Přenos dat, rozdělení pamětí a jejich organizace
 description: Otázka č.4 - Přenos dat, rozdělení pamětí a jejich organizace
 has_children: false
 nav_exclude: true
+image1: /assets/images/4_parametry_bus.jpg
+image2: /assets/images/4_3stav_opamp.jpg
+image3: /assets/images/4_otkolek1.jpg
+image4: /assets/images/4_otkolek2.jpg
 ---
 # Přenos dat, rozdělení pamětí a jejich organizace
 
@@ -37,6 +41,10 @@ nav_exclude: true
     - SCSI vs. FireWire
 
 ## Princip připojení s otevřeným kolektorem
+
+![kompiler]({{page.image3 | relative_url}})
+![kompiler]({{page.image4 | relative_url}})
+
 - Typ provedení výstupu, který se používá u integrovaných obvodů
 - Výstup je tvořen jedním tranzistorem typu NPN – ten spíná výstup
     - Na výstup je přiveden kolektor tranzistoru
@@ -55,12 +63,18 @@ nav_exclude: true
 - Používá se tam, kde hrozí vysílání více zdrojů současně
 
 ## Princip připojení s třístavovým zesilovačem
+
+![kompiler]({{page.image2 | relative_url}})
+
 - Výstup obvodu má kromě stavu log 0 a 1 také třetí stav – vysoká impedance
 - Výstup obvodu má kromě stavu log 0 a 1 také třetí stav – vysoká impedance
 - Když jeden obvod vysílá, výstupy ostatních obvodů musejí být odpojeny (nezatěžují sběrnici)
 - Používá se u systémových sběrnic v PC
 
 ## Sběrnice
+
+![kompiler]({{page.image1 | relative_url}})
+
 - Sběrnice je svazek vodičů, který propojuje jednotlivá zařízení nebo obvody mezi sebou
 - Zajištuje přenos dat, adres a řídících signálů, popřípadě chybových hlášení
 - Každá periferie v PC je připojená na nějakou sběrnici
