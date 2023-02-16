@@ -22,6 +22,14 @@ image15: /assets/images/4_dram.jpg
 image16: /assets/images/4_rom1.jpg
 image17: /assets/images/4_rom2.jpg
 image18: /assets/images/4_prom.jpg
+image19: /assets/images/4_usb1.jpg
+image20: /assets/images/4_usb2.jpg
+image21: /assets/images/4_usb_konekt.jpg
+image22: /assets/images/4_usb_film.jpg
+image23: /assets/images/4_usb4.jpg
+image24: /assets/images/4_usbc1.jpg
+image25: /assets/images/4_usbc2.jpg
+
 ---
 # Přenos dat, rozdělení pamětí a jejich organizace
 
@@ -299,12 +307,18 @@ image18: /assets/images/4_prom.jpg
     - Half duplex
     - Maximální teoretická rychlost 12 Mb/s
     - Konektory A a B
+
+    ![kompiler]({{page.image19 | relative_url}})
+
 - USB 2.0
     - Zpětná kompatibilita
     - Half Duplex
     - MAximální teoretická rychlost 480 Mb/s
     - Mini A, Mini B
     - Micro USB
+    
+    ![kompiler]({{page.image20 | relative_url}})
+
 - USB 3.0
     - Zpětně kompatibilní 
     - Maximální teoretická rychlost 5 Gb/s
@@ -312,6 +326,18 @@ image18: /assets/images/4_prom.jpg
     - 8 vodičů
         - 6 datových
         - 2 napájecí
+- USB 4
+
+    ![kompiler]({{page.image23 | relative_url}})
+
+- USB-C
+
+    ![kompiler]({{page.image24 | relative_url}})
+    ![kompiler]({{page.image25 | relative_url}})
+
+
+![kompiler]({{page.image21 | relative_url}})
+![kompiler]({{page.image22 | relative_url}})
 
 ### Princip činnosti USB (jednoduše)
 - Po sběrnici neustále kolují rámce – datové a servisní
@@ -339,7 +365,7 @@ image18: /assets/images/4_prom.jpg
 
         ![kompiler]({{page.image16 | relative_url}})
         ![kompiler]({{page.image17 | relative_url}})
-        
+
         - Jen pro čtení, naprogramování z výroby pomocí masky
         - Velká živnost
         - Použití pro firmwarerůzných zařízení
