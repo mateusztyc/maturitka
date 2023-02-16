@@ -291,6 +291,7 @@ nav_exclude: true
 - Dlouhé procesy blokují krátké -> vznik kolon
 - Samostatně se téměř nepoužívá
 - Velká průměrná čekací doba
+
 |**Proces**|**AT**|**BT**|**CT**|**TAT**|**WT**|**VT**|
 |**P0**    |**0** |**4** |4     |4      |0     |0     |
 |**P1**    |**2** |**7** |11    |9      |2     |4     |
