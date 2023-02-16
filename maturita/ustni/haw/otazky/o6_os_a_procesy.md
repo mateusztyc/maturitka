@@ -299,12 +299,101 @@ nav_exclude: true
 |**P3**    |**6** |**1** |14    |8      |7     |13    |
 |**P4**    |**8** |**3** |17    |9      |6     |14    |
 
-- {_AT (Arriving Time) – příchod procesu_: .fs-2}
+- _AT (Arriving Time) – příchod procesu_{: .fs-2 }
 - _BT (Burst Time) – délka trvaní procesu_{: .fs-2 }
-- _CT (Complition Time) – doba ukončení_
-- _TAT (Turn Around Time) – čas obrátky_
-- _WT (Waiting Time) – doba čekání_
-- _VT (Visiting Time) – kdy poprvé se objevil proces na procesoru_
-- _TAT = CT – AT_
-- _WT = TAT – BT_
-- _VT = dá se zjistit_
+- _CT (Complition Time) – doba ukončení_{: .fs-2 }
+- _TAT (Turn Around Time) – čas obrátky_{: .fs-2 }
+- _WT (Waiting Time) – doba čekání_{: .fs-2 }
+- _VT (Visiting Time) – kdy poprvé se objevil proces na procesoru_{: .fs-2 }
+- _TAT = CT – AT_{: .fs-2 }
+- _WT = TAT – BT_{: .fs-2 }
+- _VT = dá se zjistit_{: .fs-2 }
+
+### SJF = SHORTEST JOB FIRST
+- Proces, který má nejkratší požadavek na CPU bude zpracován jako první
+- Nepreemptivní plánování – proces nemůže být přerušen, musí se počkat, až se dokončí
+- V případě, že se objeví dva procesy se stejnou dobou zpracování (BT), rozhodne FCFS
+- U této strategie musíme dopředu znát délku příštího požadavku pro každý proces
+- Nevznikají kolony
+- Hrozí hladovění s procesy s dlouhým WT
+
+|**Proces**|**AT**|**BT**|**CT**|**TAT**|**WT**|**VT**|
+|**P0**    |**0** |**4** |4     |4      |0     |0     |
+|**P1**    |**2** |**7** |11    |9      |2     |4     |
+|**P2**    |**5** |**2** |14    |9      |7     |12    |
+|**P3**    |**6** |**1** |12    |6      |5     |11    |
+|**P4**    |**8** |**3** |17    |9      |6     |14    |
+
+### SRTF = Shortest Remaining Time First
+- Proces, který má nejkratší požadavek na CPU se zpracuje první
+- Preemptivní verze SJF
+- Proces se zpracovává, dokud není ukončen nebo se neobjeví nový proces s kratší dobou zpracování
+- Nevznikají kolony – krátké procesy se zpracovávají nejdřív
+- Vyhladovění dlouhých procesů (řešení je zvýšit prioritu procesu a zvýšit tak šanci na jejich proběhnutí)
+
+|**Proces**|**AT**|**BT**|**CT**|**TAT**|**WT**|**VT**|
+|**P0**    |**0** |**4** |4     |4      |0     |0     |
+|**P1**    |**2** |**7** |17    |15     |8     |4     |
+|**P2**    |**5** |**2** |7     |2      |0     |5     |
+|**P3**    |**6** |**1** |8     |2      |1     |7     |
+|**P4**    |**8** |**3** |11    |3      |0     |8     |
+
+### PS = Priority Scheduling
+- Preemptivní plánování s prioritou
+- Proces s nejvyšší prioritou bude zpracován jako první (každá proces má vlastní prioritu)
+- Nižší číslo = vyšší priorita
+- Pokud mají dva procesy stejnou prioritu, dřív bude zpracován ten, který přišel dřív
+- Hrozí hladovění procesů s nízkou prioritou (řešením je zvyšování priority procesům, které dlouho čekají)
+
+|**Proces**|**P** |**AT**|**BT**|**CT**|**TAT**|**WT**|**VT**|**RT**|
+|**P0**    |**2** |**0** |**4** |25    |25     |21    |0     |0     |
+|**P1**    |**4** |**1** |**2** |22    |21     |19    |1     |0     |
+|**P2**    |**6** |**2** |**3** |21    |19     |16    |2     |0     |
+|**P3**    |**10**|**3** |**5** |12    |9      |4     |3     |0     |
+|**P4**    |**8** |**4** |**1** |19    |15     |14    |18    |14    |
+|**P5**    |**12**|**5** |**4** |9     |4      |0     |5     |0     |
+|**P6**    |**9** |**6** |**6** |18    |12     |6     |12    |6     |
+
+### RR = Round Robin
+- Jeden z nejzákladnějších implementovaných plánovacích algoritmů
+- Přikazuje běžícímu procesu časové kvantum
+- Po uběhnutí tohoto času se proces odstaví a místo něj je spuštěn další v pořadí
+- Odstavený proces jde na konec do fronty READY
+- Pokud se proces vykoná dřív, než je časové kvantum, jde ihned po jeho dokončení na řadu další
+- Nehrozí hladovění
+- Priorita je u všech procesů stejná
+- Preemtivní plánování
+
+|**Proces**|**AT**|**BT**|**CT**|**TAT**|**WT**|**VT**|**RT**|
+|**P1**    |**0** |**4** |8     |8      |4     |0     |0     |
+|**P2**    |**1** |**5** |18    |17     |12    |0     |1     |
+|**P3**    |**2** |**2** |6     |4      |2     |4     |2     |
+|**P4**    |**3** |**1** |9     |6      |5     |8     |5     |
+|**P5**    |**4** |**6** |21    |17     |11    |9     |5     |
+|**P6**    |**6** |**3** |19    |13     |10    |13    |7     |
+Fronta: P1,P2,P3,P1,P4,P5,P2,P6,P5,P2,P6,P5
+
+### MFQS = Multilevel Feedback Queue Scheduler
+- Plánovač se zpětnou vazbou
+- Pracuje tak, že zařazuje procesy do řad a každá řada má jinou prioritu a časové kvantum
+- Jednotlivé řady jsou Round Robin s rozdílným časem zpracování
+- Poslední řada je FCFS
+- Procesy se zpracovávají v řadě
+- Po uplynutí stanového časového kvanta se proces posouvá no nižší řady
+- Proces s nejvyšší prioritou (nejnižší číslo) a první v řadě jde první
+- Proces, u kterého začne docházet k hladovění, může přeskočit do vyšší řady a přeskočit ostatní procesy
+
+|**Proces**|**AT**|**BT**|**BTR**|**CT**|**TAT**|**WT**|**VT**|**RT**|
+|**P1**    |**0** |**4** |2,0    |13    |13     |9     |0     |0     |
+|**P2**    |**1** |**5** |3,0    |16    |15     |10    |2     |1     |
+|**P3**    |**2** |**2** |0      |6     |4      |2     |4     |3     |
+|**P4**    |**3** |**1** |0      |7     |4      |3     |6     |3     |
+|**P5**    |**4** |**6** |4,1,0  |21    |17     |11    |7     |3     |
+|**P6**    |**6** |**3** |1,0    |20    |14     |11    |9     |3     |
+
+- **Fronta 1    TQ = 2 ns**
+    - P1,P2,P3,P4,P5,P6
+- **Fronta 2    TQ = 3 ns**
+    - P1,P2,P5,P6
+- **Fronta 3    FCFS**
+    - P5
