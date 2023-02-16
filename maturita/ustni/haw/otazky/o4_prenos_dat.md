@@ -335,8 +335,12 @@ image25: /assets/images/4_usbc2.jpg
     ![kompiler]({{page.image24 | relative_url}})
     ![kompiler]({{page.image25 | relative_url}})
 
+- USB verze a konektory 
 
 ![kompiler]({{page.image21 | relative_url}})
+
+- USB - přenos filmu(zajímavost)
+
 ![kompiler]({{page.image22 | relative_url}})
 
 ### Princip činnosti USB (jednoduše)
