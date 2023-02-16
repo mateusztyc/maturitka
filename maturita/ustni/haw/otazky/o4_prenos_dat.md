@@ -8,6 +8,10 @@ image1: /assets/images/4_parametry_bus.jpg
 image2: /assets/images/4_3stav_opamp.jpg
 image3: /assets/images/4_otkolek1.jpg
 image4: /assets/images/4_otkolek2.jpg
+image5: /assets/images/4_i2c.jpg
+image6: /assets/images/4_spi.jpg
+image7: /assets/images/4_rs232.jpg
+image8: /assets/images/4_rs232-1.jpg
 ---
 # Přenos dat, rozdělení pamětí a jejich organizace
 
@@ -43,7 +47,6 @@ image4: /assets/images/4_otkolek2.jpg
 ## Princip připojení s otevřeným kolektorem
 
 ![kompiler]({{page.image3 | relative_url}})
-![kompiler]({{page.image4 | relative_url}})
 
 - Typ provedení výstupu, který se používá u integrovaných obvodů
 - Výstup je tvořen jedním tranzistorem typu NPN – ten spíná výstup
@@ -58,6 +61,9 @@ image4: /assets/images/4_otkolek2.jpg
     - Pull-up rezistor je připojen k otevřenému kolektoru
 - Otevřený kolektor umožňuje připojení zátěže s vyšším proudovým odběrem ve stavu, kdy je tranzistor sepnut
 - Výstup nijak nezatěžuje sběrnici
+
+![kompiler]({{page.image4 | relative_url}})
+
 - Sběrnice může vzniknout v paralelním spojení obvodů s otevřeným kolektorem (propojením více obvodů na jednu linku = I2C)
 - Komunikaci může zablokovat kdokoliv, kdo vnutí na sběrnici log 1
 - Používá se tam, kde hrozí vysílání více zdrojů současně
@@ -148,6 +154,9 @@ image4: /assets/images/4_otkolek2.jpg
         - USB 3.0
 
 ## Sběrnice I2C
+
+![kompiler]({{page.image5 | relative_url}})
+
 - Inter Integrated Circuit od firmy Philips
 - Vlastnosti
     - Dvou-vodičová = SDA a SCL
@@ -183,6 +192,9 @@ image4: /assets/images/4_otkolek2.jpg
         - Pokud je ACK v 1 = opakuje se přenos dat
 
 ## Sběrnice SPI
+
+![kompiler]({{page.image6 | relative_url}})
+
 - Seriál Peripheral Interface od firmy Motorola
 - Vlastnosti
     - Čtyř vodičová
@@ -204,6 +216,9 @@ image4: /assets/images/4_otkolek2.jpg
 - MOSI = Master Out Slave in
 
 ## Sběrnice RS 232 - Sériový port (COM)
+
+![kompiler]({{page.image7 | relative_url}})
+
 - Full duplexní sběrnice
 - Možnost připojit 2 zařízení
     - Vysílač
@@ -226,6 +241,9 @@ image4: /assets/images/4_otkolek2.jpg
         - Od LSB po MSB
         - Paritní bit(doplnění na sudou nebo lichou paritu)
         - 2 stop bity
+
+![kompiler]({{page.image8 | relative_url}})
+
 
 ## Sběrnice IEEE 1284
 - LPT = Line Protector Terminal
