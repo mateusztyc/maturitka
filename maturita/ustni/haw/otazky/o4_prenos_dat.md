@@ -336,8 +336,10 @@ image18: /assets/images/4_prom.jpg
             - FIFO (fronta), LIFO(zásobník)
 - **Nezávislé na napájení (po odpojení od zdroje data zůstanou) = ROM**
     - ROM
+
         ![kompiler]({{page.image16 | relative_url}})
         ![kompiler]({{page.image17 | relative_url}})
+        
         - Jen pro čtení, naprogramování z výroby pomocí masky
         - Velká živnost
         - Použití pro firmwarerůzných zařízení
