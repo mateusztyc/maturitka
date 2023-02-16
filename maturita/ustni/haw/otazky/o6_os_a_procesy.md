@@ -300,7 +300,7 @@ nav_exclude: true
 |**P4**    |**8** |**3** |17    |9      |6     |14    |
 
 - {_AT (Arriving Time) – příchod procesu_: .fs-2}
-- _BT (Burst Time) – délka trvaní procesu_
+- _BT (Burst Time) – délka trvaní procesu_{: .fs-2 }
 - _CT (Complition Time) – doba ukončení_
 - _TAT (Turn Around Time) – čas obrátky_
 - _WT (Waiting Time) – doba čekání_
