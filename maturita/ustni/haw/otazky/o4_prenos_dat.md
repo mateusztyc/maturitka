@@ -325,16 +325,9 @@ image18: /assets/images/4_prom.jpg
     - READ WRITE MEMORY
         - RAM = random access memory (s nahodilým přístupem)
             - SRAM = statická
-
-            ![kompiler]({{page.image13 | relative_url}})
-            ![kompiler]({{page.image14 | relative_url}})
-
                 - Cache
                 - Dražší, rychlejší, menší kapacita
             - DRAM = dynamická
-
-            ![kompiler]({{page.image15 | relative_url}})
-
                 - Operační paměť
                 - Levnější, pomalejší, větší kapacita
                 - V každé jedné paměťové buňce je kondenzátor (refresh)
@@ -369,6 +362,10 @@ image18: /assets/images/4_prom.jpg
         - Nepotřebuje speciální programátor
         - Energeticky mazatelná, přepisovatelná
 ## Statická paměťová buňka - SRAM
+
+![kompiler]({{page.image13 | relative_url}})
+![kompiler]({{page.image14 | relative_url}})
+
 - uchovává informace po celou dobu, kdy je připojená ke zdroji, po vypnutí se obsah smaže
 - realizována jako bistabilní klopný obvod
 - používá dva datové vodiče, jeden z nich je inverzní (hodnota na vodiči opačná než v paměti)
@@ -394,6 +391,9 @@ image18: /assets/images/4_prom.jpg
 - Čtení/zápis je realizován přes 3- stavový zesilovač, pro zápis nutnost aktivního CHIP selectu
 
 ## Dynamická paměťová buňka - DRAM
+
+![kompiler]({{page.image15 | relative_url}})
+
 - Energeticky závislá paměť, po odpojení od zdroje se data ztratí
 - Informace uložená pomocí elektrického náboje na kondenzátoru
 - Náboj má tendenci se vybíjet, i když je paměť připojena ke zdroji
