@@ -298,3 +298,13 @@ nav_exclude: true
 |**P2**    |**5** |**2** |13    |8      |6     |11    |
 |**P3**    |**6** |**1** |14    |8      |7     |13    |
 |**P4**    |**8** |**3** |17    |9      |6     |14    |
+
+AT (Arriving Time) – příchod procesu
+BT (Burst Time) – délka trvaní procesu
+CT (Complition Time) – doba ukončení
+TAT (Turn Around Time) – čas obrátky
+WT (Waiting Time) – doba čekání
+VT (Visiting Time) – kdy poprvé se objevil proces na procesoru
+TAT = CT – AT
+WT = TAT – BT
+VT = dá se zjistit
