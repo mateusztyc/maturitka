@@ -15,7 +15,7 @@ nav_exclude: true
     - vliv na autora -> horrora literatura
 - Sňatek  se setřenicí (Bylo jí 13/14) - umírá mladá - E.A.Poe to nesl to těžce
     - předobraz Lenory ??
-- Narodil je v Americe - Baltimore
+- Narodil se v Americe - Baltimore
 - Po smrti ženy -> alkoholismus
     - Upil se k smrti
 - Studoval na prestižní vojenské škole
