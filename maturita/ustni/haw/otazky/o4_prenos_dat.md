@@ -15,7 +15,13 @@ image8: /assets/images/4_rs232-1.jpg
 image9: /assets/images/4_ieee1284.jpg
 image10: /assets/images/4_mem_map.jpg
 image11: /assets/images/4_delka_dat_slov.jpg
-image11: /assets/images/4_hloub_mem.jpg
+image12: /assets/images/4_hloub_mem.jpg
+image13: /assets/images/4_sram.jpg
+image14: /assets/images/4_sram_pristup.jpg
+image15: /assets/images/4_dram.jpg
+image16: /assets/images/4_rom1.jpg
+image17: /assets/images/4_rom2.jpg
+image18: /assets/images/4_prom.jpg
 ---
 # Přenos dat, rozdělení pamětí a jejich organizace
 
@@ -319,9 +325,16 @@ image11: /assets/images/4_hloub_mem.jpg
     - READ WRITE MEMORY
         - RAM = random access memory (s nahodilým přístupem)
             - SRAM = statická
+
+            ![kompiler]({{page.image13 | relative_url}})
+            ![kompiler]({{page.image14 | relative_url}})
+
                 - Cache
                 - Dražší, rychlejší, menší kapacita
             - DRAM = dynamická
+
+            ![kompiler]({{page.image15 | relative_url}})
+
                 - Operační paměť
                 - Levnější, pomalejší, větší kapacita
                 - V každé jedné paměťové buňce je kondenzátor (refresh)
@@ -330,6 +343,8 @@ image11: /assets/images/4_hloub_mem.jpg
             - FIFO (fronta), LIFO(zásobník)
 - **Nezávislé na napájení (po odpojení od zdroje data zůstanou) = ROM**
     - ROM
+        ![kompiler]({{page.image16 | relative_url}})
+        ![kompiler]({{page.image17 | relative_url}})
         - Jen pro čtení, naprogramování z výroby pomocí masky
         - Velká živnost
         - Použití pro firmwarerůzných zařízení
@@ -338,6 +353,7 @@ image11: /assets/images/4_hloub_mem.jpg
             - Nelze přepsat bežným způsobem (jen při zvýšeném napětí)
             - Nepotřebuje napájet
     - PROM
+        ![kompiler]({{page.image18 | relative_url}})
         - Programovatelná ROM (OTP = one time programable)
         - Použití u firmwaru
         - Umožňuje jeí programování
