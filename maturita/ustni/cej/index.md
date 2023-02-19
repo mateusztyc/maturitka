@@ -16,6 +16,7 @@ has_children: false
 ### [40. Maryša](rozbory/40_marysa/)
 ### [43. Stařec a moře](rozbory/43_starec_a_more/)
 ### [45. O myších a lidech](rozbory/45_o_mysich_a_lidech/)
+### [46. Petr a Lucie](rozbory/46_petr_a_lucie/)
 ### [48. Malý princ](rozbory/48_maly_princ/)
 ### [52. 451° Fahrenheita](rozbory/52_fahrenheit/)
 ### [57. 1984](rozbory/57_r1984/)
