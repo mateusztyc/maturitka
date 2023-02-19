@@ -27,7 +27,7 @@ nav_exclude: true
 - Ve 20.stol. Hora – Máchovské variace sb. ke 100. Výročí vydání Máje
 - Kritika smrti dívky, hrůzné popravy v kole, to ,že Mácha se jakoby Viléma zastává, není úplně negativním hrdinou, i když trest je zde uložen jako smrt za smrt, kritika toho,že Vilém není pobožný, protože nevěří, že po smrti něco existuje, hovoří o nicotě, prázdnotě po smrti
 
-# dilo
+# Máj
 - **Literární druh:** poezie 
 - **Literární žánr:** báseň
 - **Časoprostor:** 
