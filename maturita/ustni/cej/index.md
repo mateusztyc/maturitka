@@ -10,6 +10,7 @@ has_children: false
 ### [9. Lakomec](rozbory/9_lakomec/)
 ### [21. Havran](rozbory/21_havran/)
 ### [25. Kulička](rozbory/25_kulicka/)
+### [27. Obraz Doriana Graye](rozbory/27_gray/)
 ### [29. Máj](rozbory/29_maj/)
 ### [33. Kytice](rozbory/33_kytice/)
 ### [40. Maryša](rozbory/40_marysa/)
