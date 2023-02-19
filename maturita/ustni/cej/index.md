@@ -24,4 +24,5 @@ has_children: false
 ### [60. Alchymista](rozbory/60_alchymista/)
 ### [61. Kočka na rozpálené plechové střeše](rozbory/61_kocka_na_rozpalene_plechove_strese/)
 ### [63. Bílá nemoc](rozbory/63_bila_nemoc/)
+### [76. Spalovač mrtvol](rozbory/76_spalovac/)
 ### [81. Ostře sledované vlaky](rozbory/81_vlaky/)
