@@ -1,0 +1,130 @@
+---
+layout: page
+title: Romeo a Julie
+description: Kniha č.5 - Romeo a Julie
+has_children: false
+nav_exclude: true
+---
+# William Shakespeare - Romeo a Julie
+
+### William Shakespeare (*1564-†1616)
+- anglický básník a dramatik
+- působil jako herec a spisovatel
+- vystudoval gymnázium
+- svatba v 18
+- později spolumajitel divadla
+- v prvním období tvořil komedie a historické hry
+- v druhém období do tvorby proniká zklamání a pesimismus
+    - vznikají tragédie
+- náměty čerpal ze životopisů slavných osobností
+- jeho hry se hrály na dvoře Alžběty I.
+
+# Literárně historický kontext
+- **Charakteristika:**
+    - rozvíjí se v Itálii koncem 15. století
+    - návrat k antickým ideálům, důraz na člověka, užívání si života na zemi, vzdělání, individualita
+    - nové vědecké obory
+        - chemie, fyzika, botanika, anatomie
+    - doba velkého rozvoje, změn, objevů a vynálezů
+    - roste touha po poznání, vědení
+    - 1492 objevení Ameriky (Columbus)
+    - 1519 obeplutí země (Magabhaes)
+    - heliocentrismus (Galilei, Kopernik)
+    - objevují se první lékařské pitvy
+    - 1450 vynález knihtisku (Guttenberg)
+- **Literatura:**
+    - autoři vycházejí z anonymity
+    - změna v žánrech(villonské ballady, dialogy, dopisy, eseje, novely, velké romány, sonety)
+    - prosazování národních jazyků + latina
+- **Kultura a umění:**
+    - inspirace v antických vzorech
+    - pro architekturu je příznačná vyváženost kompozice, harmonie tvarů a rozměrů, účelnost
+    - arkádová nádvoří
+    - malířství a sochařství - zachycení dokonalosti lidského těla
+- **Další autoři tohoto období:**
+    - Francesco Petrarca
+    - Giovanni Boccaccio
+    - Ludovico Ariosto
+    - Niccolo Machiavelli
+    - Dante Alighieri
+    - Francois Villion
+    - Francois Rabelais
+    - Miguel de Cervantes
+
+# Romeo a Julie
+- **Literární druh:** drama (psané veršem)
+- **Literární žánr:** milostná tragédie
+- **Časoprostor:** 
+    - Převážně se děj odehrává v italském městě Verona, kde žijí rody Monteků a Kapuletů. Dějištěm je dům Juliiných rodičů (včetně balkonu, na němž stojí ve výňatku), jeho zahrada (tam se nachází Romeo), u mnicha Vavřince, ve veronských ulicích, hrobka Kapulatových. Dále se děj (1 scéna) odehrává v Mantově, do které je Romeo vyhoštěn za zabití Tybalta
+    - Čas nelze jednoznačně určit – v blíže neurčené minulosti, v průběhu 4 dnů (od neděle do středy)
+    - Dílo je svým tématem nadčasové.
+- **Téma:** 
+    - Nešťastná láska dvou mladých lidí ze znepřátelených rodů
+- **Motivy:**
+    - klíčové motivy výňatku např. motiv anděla, Romeo tak vidí Julii, činí ji tak nadpozemskou bytostí, typické přirovnání pro milostnou literaturu
+- **Kompozice:**
+    - Dílo je členěno na 5 dějství, která se člení na scény/obrazy a výstupy
+    - Ty jsou následně členěny na promluvy (repliky) postav (ve výňatku na repliky Romea a Julie, o dialog jde až od verše Kdo jsi, že skryt za černým pláštěm… - do té doby se jejich promluvy střídají, jsou to však nezávislé monology
+    - Objevují se stručné scénické poznámky, ve výňatku
+    - Jinak pětičlenná kompoziční výstavba:
+        - expozice – uvedení do děje – seznámení s postavami
+        - kolize – zápletka – zamilují se do sebe
+        - krize –zdánlivé vyvrcholení děje – svatba R a J
+        - peripetie – dějový zvrat – R. zabije Tybalta, vyhnán z Verony
+        - katastrofa – tragické vyvrcholení děje – sebevražda milenců
+    - Časová posloupnost = kompozice chronologická
+- **Jazyk:**
+    - Monology postav (promluva jedné postavy), dialog mezi postavami (rozhovor mezi 2 a více postavami)
+    - Psáno poezií, užit je blankvers= nerýmovaný pětistopý (deseti – či jedenáctislabičný) jamb
+    - spisovný jazyk
+    - Civilní jazyk postav (napíšu, nespisovné zájmeno co užito jako spojovací výraz), frazém - beru tě za slovo ) v kontrastu s básnickým jazykem
+    - Jednoduchá souvětí, krátké věty – oznamovací, tázací
+    - Zvolací věty mají za úkol podtrhnout citovou vypjatost scény (To přece není Montek!)
+- **Tropy a figury:**
+    - Tropy – cíl zasáhnout představivost čtenáře
+    - Básnické přirovnání – jsi stejně krásná jako boží posel
+    - Metafora – v údivu obracejí oči v sloup, pluje po nebeské pláni
+    - Metafora – odhoď svoje jméno, jen tvoje jméno je můj nepřítel – konkretizace abstraktního jména
+    - Metafora – za černým pláštěm noci, mé uši nevypily ani sto tvých slov
+    - Figury – zvuková stránka textu, důraz na city
+    - Řečnická otázka – Romeo, Romeo, proč jsi Romeo?
+    - Enumerace – ruka, noha, tvář/ anebo nějaká jiná část těla?
+    - Polysyndeton – ruka, noha, tvář/
+    - Časté opakování slov – Romeo , ty , jméno-
+    - Julie klade důraz na milovanou bytost ne jméno Romea, jen na něj jako člověka
+- **Hlavní postavy:**
+    - **Romeo**
+        - mladý, divoký, milý, zamiluje se bezhlavě do Julie, ale předtím už byl jednou také hodně zamilovaný; jeho láska možná vůbec není stálá. Vývoj - z nezodpovědného floutka opravdový muž, chtěl, aby boje mezi rody ustaly. Před Julií láska k Rosalině.
+    - **Montek a Monteková**
+        - Romeovi rodiče
+    - **Benvolio**
+        - Montekův synovec a Romeův přítel
+    - **Julie**
+        - velice mladičká, krásná dívka, rodiče jí našli ženicha, za kterého se má brzy provdat, ona se však zamiluje do Romea. Vývoj - z mladé nezkušené dívky se stává dospělá žena, která je schopna pro svou lásku obětovat cokoliv.
+    - **Kapulet**
+        - Juliin otec, v domě vládne tvrdou rukou, chce aby ho Julie jako správná dcera ve všem na slovo poslouchala, pokud ne, je schopen se hrozně rozzuřit a dceru vykázat z domu.
+    - **Kapuletová**
+        - Juliina matka, chová se ke své dceři velice odměřeně, až chladně
+    - **Tybalt**
+        - Juliin bratranec, libuje si v bitkách mezi Kapulety a Monteky
+    - **Kníže Eskalus**
+        - veronský vladař, už mu dochází trpělivost se znepřátelenými rody
+    - **Chůva**
+        - opatruje a vychovává Julii od jejího narození, má ji ráda jako svou dceru, udělala by pro ní cokoliv
+    - **Merkucio**
+        - Romeův nejlepší přítel, je starší - dohlíží na Romea, je mu vzorem.
+    - **Paris**
+        - mladý hrabě, příbuzný knížete, má se oženit s Julií
+    - **Bratr Lorenzo a bratr Baltazar**
+        - františkání
+    - **Baltazar**
+        - Romeův sluha
+    - **Samson a Řehoř**
+        - Kapuletovi sluhové
+    - **Petr**
+        - sluha Juliiny chůvy
+    - **Abraham**
+        - Montekův sluha
+    - **Lékárník, Stařec, Tři muzikanti, Parisovo páže, veronští občané, členové Kapuletovy a Montekovy rodiny, maskovaní hosté, stráže, družina, Chorus**
+- **Děj:**
+    - Romeo, syn Montekův, se zamiluje do dcery jejich nepřítele - do Julie, dcery Kapuletů. Zalíbení v sobě najdou oba dva, jen rodiny jim brání ve šťastné lásce. Rozhodnou se vzít tajně, to se jim podaří, ovšem je tu problém. Romeova nejlepšího přítele zabije Juliin bratranec - Tybalt. Romeo se mu pomstí a zavraždí ho, a proto je Romeo vyhnán z města. Julie naříká pro oba dva a otec jí zařídí vdavky se šlechticem Paridem. Julie se vzepře, pojme jed, který ji má ovšem jenom uspat a poté by se měla probudit a dostat z hrobky a žít s Romeem. Romeo se doslechne o její smrti a nad její hrobkou se zabije. Po probuzení se zabije i ona.
