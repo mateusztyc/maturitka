@@ -5,9 +5,9 @@ description: Kniha č.9 - Lakomec
 has_children: false
 nav_exclude: true
 ---
-# Moliere - Lakomec
+# Molière - Lakomec
 
-### Moliere
+### Molière (*1622-†1673)
 
 # Literárně historický kontext
 - Klasicismus konec 17. A 18.stol. (Vzorem byla antika, Návrat k rozumu, City jsou potlačován, Reakcí na citově působící baroko, pevný řád, morálka, srozumitelnost, jasnost)

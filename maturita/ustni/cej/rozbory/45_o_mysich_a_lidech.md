@@ -7,7 +7,7 @@ nav_exclude: true
 ---
 # John Steinbeck - O myších a lidech
 
-### John Steinbeck (1902-1968)(USA) 
+### John Steinbeck (*1902-†1968)(USA) 
 - Velký americký autor
 - Jeden z nejlepších autorů světa
 - Nobelova a Pulitzerova cena

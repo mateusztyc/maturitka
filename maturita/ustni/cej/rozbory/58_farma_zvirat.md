@@ -8,7 +8,7 @@ flg: /assets/images/zv.png
 ---
 # George Orwell - Farma zvířat
 
-### George Orwell (1903-1950)
+### George Orwell (*1903-†1950)
 - Novinář, spisovatel a esejista
 - Narozen 25.června 1903 v Bengálsku(Matahari, Indie)
 - Zemřel 21.ledna 1950 na tubetkulózu(Londýn,Velká Británie)

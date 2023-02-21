@@ -7,7 +7,7 @@ nav_exclude: true
 ---
 # Tennessee Williams - Kočka na rozpálené plechové střeše
 
-### Tennessee Williams(1911-1983)
+### Tennessee Williams (*1911-†1983)
 - americký dramatik, autor psychologického románu
     - jižanský autor
 - v dětství prodělal záškrt

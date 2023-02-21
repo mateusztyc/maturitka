@@ -8,7 +8,7 @@ nav_exclude: true
 
 # Paulo Coelho - Alchymista
 
-### Paulo Coelho (1947)
+### Paulo Coelho (*1947)
 - dramatik, novinář, televizní scénarista, písňový textař
 - populární brazilský spisovatel
 - 3x v psychiatrické léčebně

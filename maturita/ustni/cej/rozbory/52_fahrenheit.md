@@ -7,7 +7,7 @@ nav_exclude: true
 ---
 # Ray Bradbury - 451° Fahrenheita
 
-### Ray Bradburry(1920-2012)
+### Ray Bradburry (*1920-†2012)
 - americký prozaik, básník a esejista
 - autor sci-fi románů a povídek
 - velmi obdivoval E.A.Poea

@@ -7,7 +7,7 @@ nav_exclude: true
 ---
 # Ernest Hemingway - Stačec a moře
 
-### Ernest Hemingway (1899-1961)
+### Ernest Hemingway (*1899-†1961)
 - spisovatel(4krát ženatý)
 - je považován za čelného představitele tzv. ztracené generace
 - v roce 1953 byl oceněn Pulitzerovou cenou

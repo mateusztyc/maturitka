@@ -7,7 +7,7 @@ nav_exclude: true
 ---
 # Edgar Allan Poe - Havran
 
-### Edgar Allan Poe
+### Edgar Allan Poe (*1809-†1849)
 - 1.pol 19.století
 - sirotek (Narozen jako Edgar Allan)
 - vychován strýcem (Poe)

@@ -9,17 +9,18 @@ nav_exclude: true
 
 ### Guy de Maupassant (*1850-†1893)
 - Francouzský spisovatel
-- Představitel literárního realismu a naturalismu
+- Představitel literárního/kritického realismu a naturalismu
+- mistr povídky, jednoduchý text, převažují povídky, psal take romány(Miláček)
 - Pocházel ze zámožné rodiny
 - Účastnil se prusko - francouzské války
 - Přestěhoval se do Paříže
 - Redaktor
-- Měl syfilis
+- Měl syfilis => umíra
 - Trpěl depresema
-- Spáchal sebevraždu
+- pokusil se spáchat sebevraždu
 
 # Literárně historický kontext
-- Francouzský spisovatel, 2. Pol. 19.stol.
+- Francouzský spisovatel, 2. pol. 19.stol.
 - Představitel realismu a naturalismu - zobrazuje skutečnost i s negativními jevy ve společnosti, smrtí, alkoholem, prostitucí, postavy jsou z nejnižších vrstev společnosti, jejich chování a jednání je dáno geny a prostředím , ve kterém vyrůstají – viz. Zabiják (román ,kdy hrdina Coupe propadne alkoholu, zabije ho, jeho žena pradlena Geravisa také, osud dcery líčen v dalším románu) od Zoly a Nana (dcera hrdinů ze Zabijáka se stala prostitutkou)
 - Francie:
     - É. Zola – Nana, Zabiják, Germinal
@@ -32,13 +33,14 @@ nav_exclude: true
 - **Literární druh:** Epika
 - **Literární žánr:** Povídka
 - **Časoprostor:** 
-    - Francie - cesta z Rouenu do Havru, období po prusko-francouzské válce
+    - Francie - cesta z Rouenu do Havru(utíkají před válkou), období po/během prusko-francouzské válce, dostavník 
     - konec 19. století
 - **Téma:** 
     - Lidé z nižších společenských vrstev (prostitutka) mohou morálně převýšit lidi z vyšších společenských vrstev.
 - **Motivy:**
+    - košík s jídlem -> stoluje na úrovni, pokrytectví(oni ji nepomůžou ačkoli ona jim pomohla)
 - **Kompozice:**
-    - Chronologická v čase
+    - Chronologická v čase, er forma
     - text se člení na kapitoly, odstavce
 - **Jazyk:**
     - přímé řeči v pásmu postav

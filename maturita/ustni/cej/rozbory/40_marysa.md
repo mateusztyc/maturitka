@@ -8,7 +8,7 @@ nav_exclude: true
 
 # Alois Mrštík, Vilém Mrštík - Maryša
 
-### A+V Mrštíkové
+### A+V Mrštíkové (*1863-†1925) (*1863-†1912)
 - Českomoravská vrchovina
 - prozaici, dramatici
 - Vilém Mrštík

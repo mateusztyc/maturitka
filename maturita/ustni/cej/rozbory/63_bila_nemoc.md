@@ -7,7 +7,7 @@ nav_exclude: true
 ---
 # Karel Čapek - Bílá nemoc
 
-### Karel Čapek (*-†)
+### Karel Čapek (*1890-†1938)
 
 # Literárně historický kontext
 - Bílá nemoc je vrcholné autorovo dílo, protiválečné drama, upozorňuje na nebezpečí války, diktatury, o alegorii na soudobou situaci v Evropě resp. v Německu, hra byla úspěšná, ještě v r. 1937 vznikl stejnojmenný film s Hugo Haasem v roli dr. Galéna - jeden z důvodů Čapkova plánovaného zatčení gestapem
