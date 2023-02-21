@@ -8,7 +8,7 @@ nav_exclude: true
 # Oscar Wilde - Obraz Doriana Graye
 
 ### Oscar Wilde (*1854-†1900)
-- Irský dramatik, prozaik, básník a esejista působící v ANglii
+- Irský dramatik, prozaik, básník a esejista působící v Anglii
 - Narodil se do rodiny chirurga
 - Studoval filologii v Dublinu a na Oxfordu
     - Tam začínal se psaním

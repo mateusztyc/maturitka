@@ -8,6 +8,17 @@ nav_exclude: true
 # Karel Čapek - Bílá nemoc
 
 ### Karel Čapek (*1890-†1938)
+-meziválečné období, těžko zařadit do 1 kategorie
+- může být představitel: sci-fi, detektivky, antiutopie, literatura pro děti, drama(divadlo na Vinohradech), novinář(Lidové noviny) - Karel Poláček, Eduar Bass
+- vynálezce SLOUPKU - úvaha psaná ve tvaru sloupu
+- člen pátečníků - intelektuální elita (hovoristé G.M.)
+- překladatel - prokletí básnici
+- filozofie - pragmatická
+- na začátku spolupráce s bratrem Josefem - vynikající malíř
+    - 1. 
+    - 2. 1925 - velká díla - R.U.R.(robot) 
+    - 3. překlady, fejetony, neotická trilogie
+    - 4. pol 30.let - Hitler kancléř - Válka s mloky, Bíla nemoc
 
 # Literárně historický kontext
 - Bílá nemoc je vrcholné autorovo dílo, protiválečné drama, upozorňuje na nebezpečí války, diktatury, o alegorii na soudobou situaci v Evropě resp. v Německu, hra byla úspěšná, ještě v r. 1937 vznikl stejnojmenný film s Hugo Haasem v roli dr. Galéna - jeden z důvodů Čapkova plánovaného zatčení gestapem
@@ -23,7 +34,7 @@ nav_exclude: true
 - **Literární druh:** Drama
 - **Literární žánr:** Tragédie
 - **Časoprostor:** doba děje není v díle přímo určená, fiktivní stát v Evropě
-- **Téma:** ´
+- **Téma:** 
     - přemlouvání Maršála, aby léčil Galén Kruga, ten porušuje přísahu a léči jen chudé, dokud bohatí budou podporovat válku, zbrojení
     - boj lidstva s bílou nemocí, boj Dr. Galéna proti zbrojení a válce - v obecné rovině boj demokracie a diktatury, lidskost a násilí
     - varování před šířením nacismu
@@ -42,9 +53,11 @@ nav_exclude: true
 
 - **Hlavní postavy:**
 - Dr. Galén
+    - praktický lékař, bojoval v 1.sv => pacifista, vytvoří lek proti bíle nemoci(léči chudé a bezvyznamné lidi)
     - má mluvící jméno - Galén odkazuje k významnému řeckému lékaři, není jednoznačně kladnou postavou - je to zásadový člověk, ale porušuje Hippokratovu přísahu, když odmítá léčit ošetřit všechny, kteří mají něco společného s válkou , výrobou zbraní, pacifista, odhodlaný udělat pro mír vše, pro okolí je směšný, naivní
 - Maršál
-    - vůdce, zbrojí, chce válku, ničeho se nebojí, také onemocní, spolupráce s baronem KRUGEM, připomíná Hitlera v Německu
+    - promlouvá k národu a zjistí, že je taky nemocný, nejprve se nechce léčit, pak změní názor a přistoupí na Galénovy podmínky
+    - vůdce, zbrojí, chce válku, ničeho se nebojí, spolupráce s baronem KRUGEM, připomíná Hitlera v Německu
 - Syn
     - typ, opovrhuje dr. Galénem, zastánce nacismu, považuje dr. Galéna za nepřítele, když vyznává jiné hodnoty
 - Dcera maršála
