@@ -14,8 +14,6 @@ seo:
 - A možná jednou fungovat bude
 - A možná ne
 
-@TomaszCy
-@mateusztyc
 
 
 <!-- [Github cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf) -->
