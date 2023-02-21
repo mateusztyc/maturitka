@@ -6,3 +6,427 @@ has_children: false
 nav_exclude: true
 ---
 # Komunikace a rozdělení datových sítí
+## Základní pojmy a značky používané při návrhu datových sítí
+- **PAN**
+    - Personal Area Network
+    - Osobní síť v rámci domácnosti
+    - PC, mobil, notebook
+    - Bluetooth
+- **LAN**
+    - Local Area Network
+    - Síť v rámci malého prostoru
+    - Domácí, školní, firemní
+    - Ethernet
+- **MAN**
+    - Metropolitian Area Network
+    - Siť propojující PC v rámci města, spojení lokálních sítí
+    - Ethernet, nahrazuje ho však rychlejší optika
+- **WAN**
+    - Wide Area Network
+    - Síť propojující města, státy, kontinenty
+    - Optika, rádiové vlny
+- **ISP**
+    - Internet Service Provider
+    - Poskytovatel internetového připojení koncovým uživatelům
+- **IoT**
+    - Internet of Things
+    - Síť fyzických zařízení schopna se vzájemně propojit a vyměňovat si data
+    - Zařízení schopné připojit se k internetu
+    - Každé zařízení je schopno pracovat samostatně
+    - PC, auta, spotřebiče, chytré příslušenství
+- **QoS**
+    - Quality of Service
+    - Zaručuje kvalitu komunikace v síti
+    - Nastavuje priority, hodnotí aplikace/služby
+    - Opakem je Best Effort
+- **NIC**
+    - Network Interface Controller
+    - Síťová karta
+- **DHCP**
+    - Dynamic Host Configuration Protocol
+- **http**
+    - Hyper Text Transfer Protocol
+- **FTP**
+    - File Transfer Protocol
+- **DNS**
+    - Domain Name System
+    - Hiearchický systém doménových jmen realizovaný DNS servery a protokolem
+    - Primárně slouží pro překlad doménových jmen na IP adresy a naopak
+- **IP adresa**
+    - Internet protocol
+    - Jednoznačný identifikátor síťového zařízení v dané síti
+    - IPv4 32bit, IPv6 128bit
+    - Pracuje ve 3.vstvě OSI
+    - ipconfig /all
+- **MAC adresa**
+    - Media Access Control
+    - Jednoznačný identifikátor síťového zařízení využívající různé protokoly
+    - Pracuje ve 2. vrstě OSI
+    - MAC adresa je přiřazena síťové kartě při výrobě
+    - Fyzická adresa
+    - 48 bit
+        - První 2 nebo 3 dvojce označují kód výrobvce
+        - Šestice dvojciferných hexadecimálních čísel (01:23:45:67:89:ab)
+    - Getmac /v /fo list
+- **Default Gateway**
+    - Výchozí brána
+    - Cesta (místo) pro datový paket do jiné PC sítě v případě, že cílová IP adresa neodpovídá žádnému zařízení v dané části PC sítě
+    - IP adresa nejbližšího routeru
+    - To, s jakými adresami bude komunikace probíhat za pomoci síťových zařízení jako je buď switch či router, určuje dále maska sítě
+    - Výchozí bránu určuje poskytovatel internetového připojení
+
+## Způsoby komunikace v datových sítích
+### Unicast
+- Komunikace pouze dvou zařízení (server-klient)
+### Broadcast
+- Jedno zařízení vysílá na všechny v dané skupině
+- ARP nebo DHCP dotaz
+### Multicast
+- Jedno zařízení vysílá na vybraná zařízení v dané skupině
+- Internetová TV nebo rádio
+### Anycast
+- Před komunikací proběhne výběr z potencionální skupiny zařízení a následně s nim zahájí komunikaci
+
+## ISO/OSI model
+- ISO = International Organization for Standartization
+- OSI = Open Systém Interconnection
+- Referenční model – nejdůležitější moder architektury síti
+- Vytvořený organizací ISO koncem 70. let
+- Reakce na nemožnost komunikace zařízení různých výrobců mezi sebou
+- Rozdělen na 7 logických vrstev, které vymezují a specifikují úkoly, které by měly řešit
+### ISO/OSI vs TCP/IP
+- TCP/IP předpokládá jednoduchou a rychlou komunikaci podsítí, k níž se připojují hosté
+- ISO/OSI se snaží zajistit spolehlivost v rámci jednotlivých vrstev
+- TCP/IP je starší než ISO/OSI a má pouze 4 vrstvy
+### ISO/OSI Horní vrstvy
+- Definují, jak mohou aplikace na koncových stanicích komunikovat s uživateli a vzájemně mezi sebou
+- Aplikační, prezentační, relační
+### ISO/OSI Spodní vrstvy
+- Popisují způsob přenosu dat od jednoho koncového zařízení do druhého
+- Transportní, sítová, linková, fyzická
+### Aplikační vrstva
+- L7
+- Poskytuje uživatelské rozhraní
+- Místo, kde komunikuje uživatel s PC
+- Rozhraní mezi vlastními aplikačními programy a samotnou aplikační vrstvou
+- Aplikační programy do této vrstvy nespadají – využívají však jejich protokolu
+- Vstupuje do hry v momentě, kdy je jasné, že bude potřeba přístup k síti
+- Je odpovědna za:
+    - Identifikaci požadovaného komunikačního partnera
+    - Ověření jeho dostupnosti
+    - Ověření zda má ke komunikaci dostatečné prostředky
+- Funkce vrstvy:
+    - Souborové
+    - Tiskové
+    - Databázové
+    - Aplikační služby
+    - Zasílání zpráv
+- Protokoly:
+    - DNS, DHCP
+    - FTP, TFTP, SFTP, FTPS
+    - http, https
+    - SSH, Telnet
+### Prezentační vrstva
+- L6, presentation layer
+- Provádí formátování dat
+- Muže data komprimovat, dekomprimovat, šifrovat, dešifrovat, případně pracovat s multimédii
+- Je odpovědná za správnou transformaci dat a formátování kódu
+    - Prezentuje data aplikační vrstvě, neřeší jejich význam
+- Nejdřív je nutno se domluvit na společných datových strukturách, které budou pro přenos použity
+    - Jak budou data v rámci přenosu reprezentována, ne jak jsou reprezentována u konečných stanic
+- Rozdíl mezi aplikační a prezentační vrstvou bývá často potlačen
+    - http
+### Relační vrstva
+- L5, session layer
+- Odpovědná za ustavení, správu a ukončení relací mezi entitami prezentační vrstvy
+- Zajištuje řízení dialogu mezi dvěma zařízeními
+    - Organizuje, synchronizuje a řídí výměnu dat
+    - Obnova spojení
+    - Koordinuje komunikaci mezi systémy
+- Udržuje data různých aplikací od sebe
+- Př. Telefonní hovor
+    - Nutno vytočit protistranu (transportní spojení)
+    - Vedení rozhovoru účastníku spojení (relace)
+- Jedna relace odpovídá jednomu transportnímu spoji, který vzniká/končí při vzniku/ukončení relace
+- NetBIOS, SSL, TLS
+### Transportní vrstva
+- L4, transport layer, přenosová vrstva
+- Segmentuje data z aplikací vyšších vrstev do datového proudu a poté je zpětně sestavuje
+- Zajištuje přenos dat mezi koncovými systémy
+    - Navazuje spojení mezi odesilatelem a příjemcem v datové síti
+- Vyšším vrstvám poskytuje transparentní služby přenosu dat
+- TCP, UDP
+- Řízení toku dat
+    - Snaha o zajištění datové integrity
+    - Nenastane situace přeplnění bufferu u příjemce -> vedlo by ke ztrátě dat
+    - Nutno dodržet:
+        - Potvrzení doručených segmentů
+        - Nepotvrzené segmenty se znovu posílají
+        - Po přijetí se segmenty správně seřadí
+        - Během přenosu je udržován vhodný datový tok – zabránění zahlcení, přetížení a tím ztrátě dat
+- Spojovaná komunikace
+    - .1. segment – požadavek synchronizace
+    - .2. segment
+        - Potvrzení požadavku
+        - Potvrzení požadavku
+    - .3. segment– potvrzení dohodnutých parametrů
+    - Ten, kdo chce vysílat, musí nejprve vytvořit relaci
+        - Navázaní komunikace se vzdáleným zařízením
+        - Třícestné navazování spojení
+        - Po ukončení přenosu se ukončí i spojení
+    - Během přenosu informací se oba systémy vzájemně kontrolují
+    - Během přenosu může dojít k zahlcení sítě = kongesce
+        - PC generuje data rychleji, než dokáže síť přenášet
+        - Několik PC současně posílá data přes jednu výchozí bránu nebo do jediného cíle
+    - Zahlcení se snaží řešit buffer na straně příjemce
+        - Buffer nestačí -> zasáhne funkce 4. vrstvy
+    - Spojovaná komunikace:
+        - Inicializuje se v ní virtuální okruh
+        - Používá seřazení segmentů
+        - Pracuje s potvrzováním
+        - Využívá řízení toku dat
+- Posun okna
+    - Potvrzování každého přijatého segmentu zdržuje
+        - Vysílání dalšího segmentu nezačne dřív, než po potvrzení předešlého odeslaného segmentu
+    - Mezičas je možno využít pro poslání dalších segmentů
+    - Okno
+        - Počet segmentů (bajtů), které může odesilatel poslat bez potvrzení
+        - Příjemce muže zmenšit v případě nepřijetí všech segmentů, jež má potvrdit
+- Potvrzení
+    - Označováno také jako „pozitivní potvrzení s opakováním“
+    - Po odvysílání dohodnutého počtu segmentů odesilatel čeká na potvrzení
+        - Spuštěn vnitřní časovač
+        - V případě přetečení dojde k opakování vysílání
+- Transportní vrstva – komunikace
+    - Vytvoření spoje
+        - Vysílač pošle paket k cíli, kde žádá o synchronizaci
+        - Přijímač odpovídá paketem zpět, kde nastaví potvrzení a zároveň vyšle paket, kde žádá o synchronizaci
+        - Vysílač potvrzuje spojení a vysílá další paket, ve kterém potvrzuje příjem
+        - Potom muže kdokoliv vysílat
+    - Řízení toku dat
+        - Umí řídit množství přenášených dat tak, aby pomalý buffer v přijímači nebyl zahlcen
+        - Přijímač si sám může zastavit přenos tak, že buffer vyšle stop, až jak se data zpracují, potom vyšle go
+    - Okno
+        - Každý paket pro přijetí se musí potvrzovat -> pomalé řešení
+            - Když jsou data krátká, většinu času se potvrzuje
+        - Rychlejší řešení
+            - Nastaví se při vysílání okno např. na 3 -> potvrdí se po 3 paketech
+        - Okno = počet byte bez potvrzení
+        - Když je vysílání bezchybné, šířka okna se zvyšuje
+### Síťová vrstva
+- Network layer, L3
+- Má na starosti
+    - Adresování zařízení
+    - Umístění zařízení v síti
+    - Stanovuje nejvhodnější způsob dopravy dat
+- Přenáší i mezi zařízeními, která k ní nejsou lokálně připojena
+- Router
+- Princip
+    - Směrovač přijme paket na svém rozhraní
+    - Paket obsahuje zdrojovou a cílovou IP adresu
+    - Není-li cílem samotný router, nahlédne ro své routrovací tabulky
+    - Nalezne-li zde cílovou IP adresu, zjistí rozhraní, na které má nasměrovat paket
+    - V případě, že cílovou IP adresu nenajde, paket zahodí
+- Typy paketů
+    - Datový paket
+        - Pro přenos uživatelských dat
+        - IPv4, IPv6, IPX
+    - Aktualizační paket
+        - Zasílají si sousední routry mezi sebou
+        - Pro aktualizaci sítí připojených k jednotlivým routrům -> aktualizace routrovací tabulky
+        - RIP, RIPv2, EIGRP, OSPF
+- Směrovací (routrovací) tabulka
+    - Sítová adresa
+        - Závislá na konkrétním protokolu
+        - Pro každá protokol vlastní tabulka
+    - Rozhraní
+        - Výstupní rozhraní směrovače, přes které se bude paket posílat do dané sítě
+    - Metrika
+        - Vzdálenost cílové sítě
+        - Liší se dle použitého protokolu
+        - Počet přeskoku (RIP)
+        - Šířka pásma (OSPF)
+        - Zpoždění linky (EIGRP, včetně šířky pásma)
+### Linková vrstva
+- Data Link layer, L2, vrstva datových spojů
+- Zajištuje fyzický přenos dat
+- Zpracovává oznamování chyb, síťovou topologii a řízení toku
+- Pomocí HW adresy se stará o doručení paketu ke správnému zařízení v síti
+- Poskytuje spojení mezi dvěma sousedními systémy
+- Formátuje pakety do datových rámců (frames)
+    - Tzv. obálka
+    - Rámce jsou pak převedeny do jednotlivých bitů k vysílání ve fyzické vrstvě
+- Uspořádává data z fyzické vrstvy do rámců
+- Zodpovědná za jedinečnou identifikaci každého zařízení umístěného v lokální síti
+- Switch, Bridge
+- Každý paket poslaný z routru do routru je obalen řídícími informacemi v linkové vrstvě
+    - Odstraněno v přijímacím směrovači
+    - Prováděno v každém přeskoku
+    - Potřebné ke správnému doručení z jedné sítě do druhé
+    - Paket se nemění
+- LLC
+    - Logical Link Control
+    - Podvrstva řízení logických spojů
+- MAC
+    - Media Access Control
+    - Podvrstva řízení přístupu k médiu
+- SWITCH
+    - Obsahuje CAM tabulku, ve které hledá cílové MAC adresy
+    - Zná MAC adresu
+        - Posílá rámec na daný port
+    - Nezná MAC adresu
+        - Odesílá rámec na všechny porty, kromě příchozího
+        - Po obdržení odpovědi si aktualizuje CAM tabulku
+    - Cut-Through
+        - Rámec přeposílán okamžitě po zjištění cílové MAC adresy
+        - Bez kontroly chyb
+    - Store and Forward
+        - Po přijetí rámce a uložení do bufferu se ověří kontrolní součet
+        - Pokud je OK přepošle se, jinak se zahodí
+### Fyzická vrstva
+- L1, physical layer
+- Nejnižší vrstva specifikující fyzickou komunikaci
+- Aktivuje, udržuje, deaktivuje fyzické spoje
+- Definuje všechny elektrické, fyzické a mechanické vlastnosti zařízení
+    - Rozložení pinu, napěťové úrovně, vlastnosti přenosových medií
+- Přenos jednotlivých bitů sousedovi
+- Snaha o korektní přenos
+- Nerozlišuje jednotlivé bity
+- Hub, repeater, NIC, modem
+
+## Popis protokolů
+### CSMA/CD
+- Carrier Sanse Multiple Access Collision Detect
+- Stanice/uzel poslouchá, zda je na síti nějaký provoz
+- Po vysílání paketů pokračuje sledování sítě
+- Kolize nastává v případě vysálání dvou a více uzlů současně
+- Při detekci kolize je zastaveno vysílání
+- Čekání náhodně dlouhou domu a opakování pokusu o vysílání
+- Malá režie při malé zátěži
+- Využití v ethernetu
+- Topologie – u sběrnice HUB
+- Nenaléhající = Non persistent
+    - V případě obsazenosti sítě uzel počká náhodně dlouhou dobu a opět kontroluje
+- Naléhající = Persistent
+    - Uzel neustále testuje obsazenost sítě a v okamžiku uvolnění začíná vysílat
+### CSMA/CA
+- Collision avoidance
+- Obdoba CSMA/CD se snahou vyhnout se kolizím
+- Základem je dodržování časového rozestupu mezi paketu
+- Před vysíláním naslouchá, zda je na sítí aktivita
+    - Případě obsazenosti se počká náhodně dlouhou dobu
+- V případě klidu na sítí je poslán RTS (request to send) konkrétnímu uzlu a následuje čekání
+- Reakcí je signál CTS (clear to send), která posílá cílový uzel
+- Signál RTS a CTS jsou posílány v předem definovaných časových intervalech
+    - Neobdržení je vyhodnoceno jako kolize a přenos je odložen
+- Po přijetí signálu CTS je zahájen přenos
+- Výjimkou je zaslání RTS jako broadcast
+- Nečeká se na CTS, vysílání začíná okamžitě
+- Využití u bezdrátových sítí
+### Token Ring
+- Využívá speciální paket = token k informování uzlů o možnosti komunikace
+- Token je vytvořen při inicializaci sítě
+    - Server nebo vyčleněná stanice (AM = aktivní monitor)
+    - Stav je jim monitorován a v případě ztráty/poškození je vygenerován nový
+- SM (pohotovostní monitor)
+    - Hlídá AM a v případě nutnosti jej zastoupí -> nový AM
+    - Velikost 3B
+- Princip
+    - Vysílat muže pouze ten, který má právě prázdný idle token
+    - Poznačený (busy) token spolu s daty předá stanice sousedovi
+        - Předávání dokud nedojde do cíle
+    - Příjemce potvrdí přijaté data zasláním označeného tokenu odesilateli
+    - Po přijetí uvede odesílatel token do původního stavu -> muže vysílat další
+    - Postupně nahrazen ethernetem
+
+## Kabeláž
+- Přímý kabel
+    - Straight-through cable
+    - Slouží pro propojení:
+        - PC-switch/HUB
+        - Router-switch/HUB
+- Křížený kabel
+    - Crossover cable
+    - Slouží pro propojení
+        - Router – router
+        - PC – router
+        - PC – PC
+        - Switch/hub – switch/hub
+- Ethernet 10Base5
+    - Thick cable, tlustý ethernet, žlutý ethernet
+    - Prumer koaxiálního kabelu 10mm s impedanci 50ohm
+    - 10 Mbit/s
+    - Base
+        - Přenos v základním pásmu – signál není modulován na jiný signál
+    - Max 500m
+    - Možnost vytvářet odbočky
+        - Max 100 stanic
+        - Přípoj vyřezán do kabelu
+        - Nutno použít transciever
+    - Velmi široký, neforemná, drahý
+- Ethernet 10base2
+    - Thin ethernet, tenký, thinnet
+    - Pruměr cca 0,5cm se stejnou impedancí
+    - Max délka do 200m
+    - Integrace transcevieru do sítové karty
+        - Minimalizování odbočky z zařízení (konektor T)
+- Ethernet 10baseT
+    - Pro přenos TP
+    - Možnost využít hvězdicové/stromové topologie
+    - Snaha docílit stejné přenosové rychlosti vedla k velkému zkrácení dosahu (100m)
+    - Bez změny přistupu ke sdílenému mediu
+        - CSMA/CD
+        - Jednoduchý přechod mezi kabeláži
+    - Half-duplex
+        - Využíváno dvou páru TP (vysílání/příjem)
+        - Full duplex až s příchodem switchovaného enthernetu
+
+## Popis průchodu dat datovou sítí – od odesílatele k příjemci v rámci jednotlivých vrstev
+### Encapsuiation - Zapouzdření
+- Každá vrstva ISO/OSI modelu data obalí informacemi
+- Pro komunikaci mezi sousedními vrstvami jsou využity tzv.PDU
+    - Obsahují řídící informace od dané vrstvy
+    - Zapsány v hlavičce
+    - Každá PDU má jiný název/označení
+- Aplikační, Prezentační, Relační
+    - Uživatelská data jsou předána transportní vrstvě
+- Transportní
+    - Zajistí vytvoření virtuálního okruhu
+        - Vyšle synchronizační paket přijímacímu zařízení
+    - Rozdělí přijatá data na segmenty
+        - Každá je přesně označen
+    - Každá segment mí svou hlavičku (TCP/UDP, první PDU)
+- Síťová
+    - Dochází k síťovému adresování a směrování v datové síti
+        - Segment se dostane do správné sítě
+    - Přidání vlastní hlavičky
+    - Vznik paketu nebo také datagramu
+- Linková
+    - Zodpovědná za předání dat fyzické vrstvě k odvysílání (umístění na sítové medium)
+    - Přidání vlastní hlavičky
+    - Vznik rámce
+- Fyzická
+    - Převedení/rozdělení na jednotlivé bity
+    - Zajištění kódování na digitální signál a formát čitelný pro přijímací zařízení ve stejné lokální síti
+### Deencapsulation - Odpouzdření
+- Po přetečení jsou PDU odstraněna
+    - Vždy pouze v příslušné vrstvě příslušným PDU
+- Následné předání vyšší vrstvě
+- Fyzická vrstva
+    - Přijímá vysílaný signál
+        - Rozhoduje, zda jde o log 0 nebo log 1
+    - Po přijetí logické skupiny 0 1 jsou předány Linkové
+- Linková
+    - Nastává rekonstrukce rámce, zjištění MAC adresy, výpočet kontrolního součtu CRC a porovnání s hodnotou v části FCS
+        - Souhlasí li kontrolní součty, vyjme se paket a předá sítové vrstvě
+        - Ostatní data se zahodí
+- Síťová
+    - Z paketu se zjistí IP adresa
+    - Je li shodná s adresou cíle, vyjme se segment
+        - Hlavička opět zahozena
+- Transportní
+    - Znovu sestavení datového proudu – uživatelských dat
+    - Potvrzení přijatých dat
+    - Předání do aplikační vyšší vrstvy
+- Relační, Prezentační, Aplikační
+    - Předání a zobrazení dat uživateli
