@@ -44,7 +44,7 @@ image9: /assets/images/7_provskon2.jpg
     - pokud proměnná počítadlo je 0, tudíž v bufferu nejsou žádná data, nemůže také
     konzument nic z bufferu vybírat, pokud data v bufferu jsou, vybere data a sníží proměnnou
     počítadlo o 1
-
+- **Producent x Konzument**
 ![kompiler]({{page.image7 | relative_url}})
 
 ![kompiler]({{page.image8 | relative_url}})
