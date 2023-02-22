@@ -159,13 +159,16 @@ xnor: /assets/images/xnor.jpg
     - Bloky mužou obsahovat třeba budič nebo registr a jiné obvody
     - Logický blok v FPGA může být stejně jednoduchý a malý jako makro buňka, ale taky velký a komplexní, nicméně nejsou nic víc, než například pár tabulek logických funkcí nebo klopného obvodu
     - Logické bloky jsou nejběžnější architekturou FPGA a jsou rozloženy do pole logických bloků
+
     ![Makrobunka]({{page.makrobunka | relative_url}})
 
 ### Webpack
 - ISE WEbPACK je sada nástrojů sloužící k překladu zdrojových kódů a syntéze FPGA konfigurace na základě popisu systému pomocí HDL jazyka
 - Vstupy jsou nutné napsat ve formě, kterou je systém schopen převést na model této konstrukce
 - Programování závislé na předchozích krocích. Jednotlivé kroky však nemusíme provádět postupně, prakticky stačí pouze spustit poslední krok, tj. programování (pomocí aplikace iMPACT). Systém již sám provede všechny potřebné kroky, které musí předcházet - tzn. syntézu a implementaci.
-- Hlavním uživatelským rozhraním ISE Webpacku je Project Navigator, který zahrnuje design hierarchii, editor kódu a výstupní konzoli Všechny nástroje jsou přístupné přes stromové menu vlevo dole a nabízí tyto nástroje: ![Webpack]({{page.webpack | relative_url}})
+- Hlavním uživatelským rozhraním ISE Webpacku je Project Navigator, který zahrnuje design hierarchii, editor kódu a výstupní konzoli Všechny nástroje jsou přístupné přes stromové menu vlevo dole a nabízí tyto nástroje: 
+
+![Webpack]({{page.webpack | relative_url}})
 
 ### PLD metodika návrhu
 - Formální zápis
@@ -204,7 +207,8 @@ xnor: /assets/images/xnor.jpg
 - Vstup A je pro zavádění dat (informace)
 - Vstup B je povolovací (možnost blokovat data), povolen v 0
 - Výstupy Qa – Qh
-- CLK je hodinový signál a \CLR smaže registry (aktivní v 0)
+- CLK je hodinový signál a CLR smaže registry (aktivní v 0)
+
 ![74164]({{page.x74164 | relative_url}}) ![74164x]({{page.x74164x | relative_url}})
 
 ### 74166
