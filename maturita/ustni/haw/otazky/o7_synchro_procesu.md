@@ -4,6 +4,14 @@ title: Synchronizace procesů
 description: Otázka č.7 - Synchronizace procesů
 has_children: false
 nav_exclude: true
+image1: /assets/images/7_binsem.jpg
+image2: /assets/images/7_stridpres.jpg
+image3: /assets/images/7_zamprom.jpg
+image4: /assets/images/7_peter.jpg
+image5: /assets/images/7_atomic.jpg
+image6: /assets/images/7_obecsem.jpg
+image7: /assets/images/7_provskon.jpg
+image8: /assets/images/7_provskon1.jpg
 ---
 # Synchronizace procesů
 ## Producent vs. Konzument
@@ -46,14 +54,19 @@ nav_exclude: true
     konzument nic z bufferu vybírat, pokud data v bufferu jsou, vybere data a sníží proměnnou
     počítadlo o 1
 
+![kompilator]({{page.image7 | relative_url}}
+
+![kompilator]({{page.image8 | relative_url}}
+
 ## Kritická sekce:
 - část strojového kódu, kde dochází k přístupu ke sdíleným prostředkům
 - hrozí zde přístup více vláken najednou
 - **Podmínky KS:**
-    - Žádné dva procesy nebo vlákna nesmí být současně uvnitř stejné kritické sekce
-    - Na řešení nesmí mít vliv počet CPU
-    - Žádný proces nesmí zůstat čekat nekonečně dlouho na kritickou sekci
-    - Žádný proces mimo kritickou sekci nesmí blokovat jiný proces, který by do něj měl vstoupit
+    - Žádné dva procesy nesmí být v jeden čas ve stejné KS (vzájemné vyloučení)
+    - Žádny proces mimo KS nesmí blokovat jiný proces, který by chtěl vstoupit do kritické sekce (trvalost postupu)
+    - Na KS nesmí žádny proces čekat nekonečně dlouho (konečné čekání)
+    - Počet a rychlost CPU nesmí mít vliv na řešení KS
+
 - **Řešení KS:**
     - Softwarová řízení na aplikační úrovni
         - Je v celé režii programátora, jedno ze základních řešení, je zde aktivní čekání
@@ -79,6 +92,9 @@ nav_exclude: true
     - **zamykací proměnná**
         - Každý proces dostane zamykací proměnnou lock, když je v 1 nemůže do kritické sekce, 0 můžu, je tam volno
         - Může nastat situace, že jeden proces ji nestihne načíst před přepnutím kontextu, druhý proces začne taky načítat lock proměnnou -> už jsou dva procesy v kritické sekci
+
+    ![kompilator]({{page.image3 | relative_url}}
+
     - **přesné střídání**
         - Vylepšení předchozího řešení (řešení č. 2)
         - Proměna turn určuje, který proces může vstoupit do kritické sekce
@@ -86,8 +102,14 @@ nav_exclude: true
         - Když P0 opustí kritickou sekci, nastaví turn na 1, což říká že P1 může vstoupit
         - Přijde P1, uvidí, že turn = 1, což znamená, že může vstoupit do kritické sekce, po vystoupení nastaví turn na 0
         - P0 blokuje P1 -> takže porušuje 3. podmínku kritické sekce, nepoužitelné
-    - **Petersonovo řešení**
+
+    ![kompilator]({{page.image2 | relative_url}}
+
+    -  **Petersonovo řešení**
         - Funkční řešení a aktivním čekáním (while)
+
+        ![kompilator]({{page.image4 | relative_url}}
+
     - **Atomická instrukce**
         - enter_css: task lock
             - Kopíruj lock do CPU a nastav na 1
@@ -108,6 +130,9 @@ nav_exclude: true
             - H -> připraven vstoupit
             - H -> nemůže vstoupit, protože L je v kritické sekci
             - H -> aktivní čekání
+
+        ![kompilator]({{page.image5 | relative_url}}
+
     - **Bez aktivního čekání**
         - Jedná se o systémové volání, které uspí, nebo probudí daný proces
         - Voláním přijímá jeden parametr (id procesu)
@@ -131,14 +156,17 @@ nav_exclude: true
 - **Obecný semafor**
     - Jedná se o datovou strukturu obsahující celočíselný čítač a frontu čekajících procesů
     - Operace nad semaforem mohou provádět pouze funkce:
-        - INIT
+        - INIT()
             - Inicializuje semafor na nezápornou hodnotu, 1 – určuje, kolik procesů muže být voláno funkcí wait
-        - WAIT
+        - WAIT()
             - Snižuje hodnotu čitače
             - Pokud je hodnota záporná, je proces blokován a zařazen do fronty čekajících
-        - SIGNAL
+        - SIGNAL()
             - Zvyšuje hodnotu čitače
             - Pokud je ve frontě nějaký proces, je odblokován, může vstoupit do KS
+
+![kompilator]({{page.image6 | relative_url}}
+
 - **Binární semafor**
     - MUTEX
     - Semafor je implementován pomocí služeb lock a unlock
@@ -151,6 +179,8 @@ nav_exclude: true
     - Pokud by byl nastaven, zařadí se do fronty čekající procesů
     - Pokud by byl nastaven, zařadí se do fronty čekajících procesů
     - Když opouští KS, volá funkci unlock a zjišťuje, jestli někdo není ve frontě a mění hodnotu semaforu, pokud ano, je vyjmut a vstoupí do KS, ale hodnota semaforu se nezmění, odblokování semaforu nastavuje poslední proces
+
+![kompilator]({{page.image1 | relative_url}}
 
 ## Problémy semaforů
 - **Deadlock**
