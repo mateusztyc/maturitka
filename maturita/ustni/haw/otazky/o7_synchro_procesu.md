@@ -12,6 +12,7 @@ image5: /assets/images/7_atomic.jpg
 image6: /assets/images/7_obecsem.jpg
 image7: /assets/images/7_provskon.jpg
 image8: /assets/images/7_provskon1.jpg
+image9: /assets/images/7_provskon2.jpg
 ---
 # Synchronizace procesů
 ## Producent vs. Konzument
@@ -19,17 +20,7 @@ image8: /assets/images/7_provskon1.jpg
 - 2 z nich bude buffer
 - Producent přidá hodnoty do bufferu a konzument je veme
 
-|Běží       |Akce       |Výsledek|
-|:----------|:----------|:-------|
-|Producent  |R0=count   |R0=3    |
-|Producent  |R0++       |R0=4    |
-|           |           |        |
-|Konzument  |R1=count   |R1=3    |
-|Konzument  |R1--       |R1=2    |
-|           |           |        |
-|Producent  |count=R0   |count=4 |
-|           |           |        |
-|Konzument  |count=R1   |count=2 |
+![kompilator]({{page.image9 | relative_url}}
 
 - Po vykonání instrukce se může přepnout kontext
 - Producent generuje data do vyrovnávací paměti (buffer) o velikostí n (společná paměť pro producenta a konzumenta)
