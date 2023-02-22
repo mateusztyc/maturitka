@@ -35,7 +35,7 @@ x74988xx: /assets/images/x74688xx.jpg
 x74193: /assets/images/x74193.jpg
 x74688: /assets/images/x74688.jpg
 x74688x: /assets/images/x74688x.jpg
-x74688xx: /assets/imaegs/x74688xx.jpg
+x74688xx: /assets/images/x74688xx.jpg
 and: /assets/images/and.jpg
 nand: /assets/images/nand.jpg
 or: /assets/images/or.jpg
