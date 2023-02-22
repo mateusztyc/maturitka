@@ -20,7 +20,7 @@ image9: /assets/images/7_provskon2.jpg
 - 2 z nich bude buffer
 - Producent přidá hodnoty do bufferu a konzument je veme
 
-![kompiler]({{page.image9 | relative_url}}
+![kompiler]({{page.image9 | relative_url}})
 
 - Po vykonání instrukce se může přepnout kontext
 - Producent generuje data do vyrovnávací paměti (buffer) o velikostí n (společná paměť pro producenta a konzumenta)
@@ -45,9 +45,9 @@ image9: /assets/images/7_provskon2.jpg
     konzument nic z bufferu vybírat, pokud data v bufferu jsou, vybere data a sníží proměnnou
     počítadlo o 1
 
-![kompiler]({{page.image7 | relative_url}}
+![kompiler]({{page.image7 | relative_url}})
 
-![kompiler]({{page.image8 | relative_url}}
+![kompiler]({{page.image8 | relative_url}})
 
 ## Kritická sekce:
 - část strojového kódu, kde dochází k přístupu ke sdíleným prostředkům
@@ -84,7 +84,7 @@ image9: /assets/images/7_provskon2.jpg
         - Každý proces dostane zamykací proměnnou lock, když je v 1 nemůže do kritické sekce, 0 můžu, je tam volno
         - Může nastat situace, že jeden proces ji nestihne načíst před přepnutím kontextu, druhý proces začne taky načítat lock proměnnou -> už jsou dva procesy v kritické sekci
 
-    ![kompiler]({{page.image3 | relative_url}}
+    ![kompiler]({{page.image3 | relative_url}})
 
     - **přesné střídání**
         - Vylepšení předchozího řešení (řešení č. 2)
@@ -94,12 +94,12 @@ image9: /assets/images/7_provskon2.jpg
         - Přijde P1, uvidí, že turn = 1, což znamená, že může vstoupit do kritické sekce, po vystoupení nastaví turn na 0
         - P0 blokuje P1 -> takže porušuje 3. podmínku kritické sekce, nepoužitelné
 
-    ![kompiler]({{page.image2 | relative_url}}
+    ![kompiler]({{page.image2 | relative_url}})
 
     -  **Petersonovo řešení**
         - Funkční řešení a aktivním čekáním (while)
 
-        ![kompiler]({{page.image4 | relative_url}}
+    ![kompiler]({{page.image4 | relative_url}})
 
     - **Atomická instrukce**
         - enter_css: task lock
@@ -122,7 +122,7 @@ image9: /assets/images/7_provskon2.jpg
             - H -> nemůže vstoupit, protože L je v kritické sekci
             - H -> aktivní čekání
 
-        ![kompiler]({{page.image5 | relative_url}}
+        ![kompiler]({{page.image5 | relative_url}})
 
     - **Bez aktivního čekání**
         - Jedná se o systémové volání, které uspí, nebo probudí daný proces
@@ -156,7 +156,7 @@ image9: /assets/images/7_provskon2.jpg
             - Zvyšuje hodnotu čitače
             - Pokud je ve frontě nějaký proces, je odblokován, může vstoupit do KS
 
-![kompiler]({{page.image6 | relative_url}}
+![kompiler]({{page.image6 | relative_url}})
 
 - **Binární semafor**
     - MUTEX
@@ -171,7 +171,7 @@ image9: /assets/images/7_provskon2.jpg
     - Pokud by byl nastaven, zařadí se do fronty čekajících procesů
     - Když opouští KS, volá funkci unlock a zjišťuje, jestli někdo není ve frontě a mění hodnotu semaforu, pokud ano, je vyjmut a vstoupí do KS, ale hodnota semaforu se nezmění, odblokování semaforu nastavuje poslední proces
 
-![kompiler]({{page.image1 | relative_url}}
+![kompiler]({{page.image1 | relative_url}})
 
 ## Problémy semaforů
 - **Deadlock**
