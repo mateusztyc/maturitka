@@ -27,6 +27,7 @@ x74573x: /assets/images/x74573x.jpg
 x74244: /assets/images/x74244.jpg
 x74244x: /assets/images/x74244x.jpg
 x74244: /assets/images/x74244.jpg
+x74245: /assets/images/x74245.jpg
 x74245x: /assets/images/x74245x.jpg
 x74988: /assets/images/x74688.jpg
 x74988x: /assets/images/x74688x.jpg
@@ -279,6 +280,7 @@ xnor: /assets/images/xnor.jpg
     - 0 funguje
 - DIR1 z A do B
 - DIR2 z B do A
+
 ![74245]({{page.x74245 | relative_url}}) ![74245x]({{page.x74245x | relative_url}})
 
 ### 74688
@@ -289,7 +291,7 @@ xnor: /assets/images/xnor.jpg
 - Výstup z ANDu se nakonec porovnává NAND
 - Pokud jsou všechny vstupy stejné, výstup je 0
 - Použití pro porovnávání 2 8bitových slov, nebo jako adresní dekodér (1 vstup pevně dány)
-![74688]({{page.x74245 | relative_url}}) ![74688x]({{page.x74245x | relative_url}}) ![74688xx]({{page.x74688xx | relative_url}})
+![74688]({{page.x74688 | relative_url}}) ![74688x]({{page.x74688x | relative_url}}) ![74688xx]({{page.x74688xx | relative_url}})
 
 ### 74193
 - 4 bitový obousměrný čítač
