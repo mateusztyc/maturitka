@@ -23,6 +23,7 @@ image12: /assets/images/diagram.jpg
 - Bez podpůrných obvodů není schopen provozu
 - Mikropočítač vznikne připojením k paměti vstupních a výstupních bloků (je rozšířen o paměť, vstupní a výstupní bloky)
 - Mikropočítač doplněný o periferie umožňující komunikaci s uživatelem (monitor, klávesnice, myš, vnější paměť) pak tvoří mikropočítačový systém
+
 ![Mikropočítač]({{page.image1 | relative_url}})
 
 ## Mikroprocesor - abstrakce

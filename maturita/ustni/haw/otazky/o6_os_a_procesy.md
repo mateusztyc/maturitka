@@ -4,6 +4,7 @@ title: Operační systémy a plánování procesů
 description: Otázka č.6 - Operační systémy a plánování procesů
 has_children: false
 nav_exclude: true
+image1: /assets/images/6_proces_zivcykl.jpg
 ---
 # Operační systémy a plánování procesů
 
@@ -124,6 +125,9 @@ nav_exclude: true
         - fronta procesů čekajících na vstupní, nebo výstupní události anebo, na nějaký signál, po obsloužení se přesunou do fronty ready
     - END - ukončený
         - Proces se zpracoval a je ukončený
+
+![Životní_cyklus]({{image1 | relative_url}})
+
 ### Životní cyklus procesů
 - Životní cyklus procesu probíhá podle diagramu stavových přechodů
 - U více procesů je zařazení k běhu řízeno pravidly
