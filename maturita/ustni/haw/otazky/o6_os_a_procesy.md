@@ -126,7 +126,7 @@ image1: /assets/images/6_proces_zivcykl.jpg
     - END - ukončený
         - Proces se zpracoval a je ukončený
 
-![Životní_cyklus]({{image1 | relative_url}})
+![Životní_cyklus]({{page.image1 | relative_url}})
 
 ### Životní cyklus procesů
 - Životní cyklus procesu probíhá podle diagramu stavových přechodů
