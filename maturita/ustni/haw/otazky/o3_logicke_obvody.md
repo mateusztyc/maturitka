@@ -141,9 +141,11 @@ xnor: /assets/images/xnor.jpg
             - Block RAM
             - Multiplier
                 - Násobička
-            - DCM – digital CLK manager, rozvod CLK ke všem CLB
+            - DCM – digital CLK manager
+                - rozvod CLK ke všem CLB
+                - distribuce zpoždění, násobení, dělení, fázový posun
             
-            - ![ARCHI]({{page.archi1 | relative_url}})
+            ![ARCHI]({{page.archi1 | relative_url}})
 
 ### Makro buňka vs. Logický blok
 - #### Makrobuňka
