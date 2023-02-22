@@ -222,6 +222,7 @@ xnor: /assets/images/xnor.jpg
 - CLK INH je pro pozastavení CLK (aktivní v 1)
 - Pro celý převod je potřeba 9 CLK – 1 CLK na načtení a 8 CLK na výstup
 - Používá se pro převod paralelní informace na sériovou například u přijímací jednotky nebo pro rozšíření počtu vstupů u mikroprocesoru
+
 ![74166]({{page.x74166 | relative_url}}) ![74166x]({{page.x74166x | relative_url}})
 
 ### 74595
