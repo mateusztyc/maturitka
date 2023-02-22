@@ -11,13 +11,35 @@ nav_exclude: true
 - kontroverzní
 - pohřben v Praze, pražský neměc, žid
 - umírá na tuberkulózu(bez dětí)
-- 90% jeho děl vydal jeho kamarád
-- prvky existencionalismu - předchůdce existencionalismu
+- 90% jeho děl vydal jeho kamarád Max Brode
+- prvky existencionalismu(zakladatel, v té době jiný název; existen. vzniká po 1.sv) - předchůdce existencionalismu
+- experimentální próza
+    - Marcel Proust - Hledání ztraceného času
+    - James Joyce - Odysseus
+    - Kafka 
+- (dělnicka úrazova pojišťovna - úředník)
+- "problém" s autorskými právy - pozůstalosti => bez dětí, sestry umírají v koncentračním táboře
+- znaky Kafkova díla
+    - málo dějovosti(experimentalní literatura, děj nahrazují vnitřní pocity a popisy)
+    - absurdní prvky - proměna v brouka, proces -> vyšetřování => pak je popraven
+    - díla jsou tragická nebo tragikomická, působí pesimisticky
+    - hrdinové nemají většinou jméno, vyjímka Proměna - Řehoř Samsa a Proces - Josef K., Zámek - zeměměřič
+    - jazyk výhradně spisovný
+    - velice introvertní človek/osobnost
+- díla 
+    - Proměna - Řehoř Samsa
+    - Proces - Josef K. hlavní postava, podivné vyšetřovíní, je obviněn(proces představuje byrokracii), pořád ho navštěvují 2 pánove => výslechy po 1 roku ho zabíjejí
+    - Zámek - Zeměměřič
 # Literárně historický kontext
-
+- česko-německo-židovská literatura
+- většinu životal žil v Praze(hrob v Praze, lidé mu tam nosí kamínky)
+- 1. republika, před pádem Rakousko-Uherskě monarchie
+- vrstevník Haška(Švejk), Hašek byl ve válce, Kafka ne(nemoc)
+- Alberto Camus - Cizinec
+- Jean Paul Sartre
 # Proměna
 - jedno z mála děl co vydal Kafka
-- výpověď Kafky, složitý vztah s otcem(dělnicka úrazova pojišťovna - úředník)
+- výpověď Kafky, složitý vztah s otcem
 - autobiografické prvky v Řehořovi(nepotřebny)
 - rodinné vztahy jsou promítany v díle
 - **Literární druh:**epika
