@@ -5,6 +5,11 @@ description: Otázka č.6 - Operační systémy a plánování procesů
 has_children: false
 nav_exclude: true
 image1: /assets/images/6_proces_zivcykl.jpg
+image2: /assets/images/6_monovsmikro.jpg
+image3: /assets/images/6_hybrid.jpg
+image4: /assets/images/6_mikro.jpg
+image5: /assets/images/6_mono.jpg
+image6: /assets/images/6_schemaOS.jpg
 ---
 # Operační systémy a plánování procesů
 
@@ -18,6 +23,8 @@ image1: /assets/images/6_proces_zivcykl.jpg
     - Obsluhu virtuální a vnější paměti
     - Obsluhu uživatelského rozhraní
 - OS se skládá z jádra, ovladačů, příkazového procesoru, grafické nadstavby (GUI) a podpůrných programů
+
+![kompilator]({{page.image6 | relative_url}})
 
 ## Jádro OS
 - Říká se mu CORE nebo KERNEL
@@ -48,6 +55,9 @@ image1: /assets/images/6_proces_zivcykl.jpg
     - Představitelé
         - MS-DOS, WIN 95/98, Mac OS do 8.6 (nemodulární)
         - Free VSD, Linux (modulární)
+
+![kompilator]({{page.image5 | relative_url}})
+
 - **Micro jádro**
     - Minimalizuje rozsah jádra a nabízí jednoduché rozhraní s jednoduchými abstrakcemi a malým počtem služeb pro nejzákladnější správu CPU, I/O zařízení, paměti a IPC
     - Ostatní služby jako jsou plánování, správa SW systému, ovladače zařízení jsou implementovány mimo jádro v podobě serveru
@@ -58,12 +68,21 @@ image1: /assets/images/6_proces_zivcykl.jpg
     - Nevýhoda
         - Vysoká režie IPC = meziprocesová komunikace
     - Minix, Symbian OS
+
+![kompilator]({{page.image4 | relative_url}})
+- **Mono vs Mikro**
+
+![kompilator]({{page.image2 | relative_url}})
+
 - **Hybridní jádro**
     - Kombinace monolitického a micro jádra
     - Objevuje se v dnešních OS
     - Micro jádro je rozšířeno o kód, který by mohlo běžel v podobě serveru v uživatelském režimu, ale za účelem zmenšení režie IPC je těsněji provázán a běží v privilegovaném režimu v podobě serveru
     - Nedokáže za běhu samo zavádět moduly
     - Windows, Mac OS X
+
+![kompilator]({{page.image3 | relative_url}})
+
 - **Exo jádro**
     - Experimentální jádro
     - Používá se na univerzitách k testování
