@@ -27,6 +27,7 @@ x74573x: /assets/images/x74573x.jpg
 x74244: /assets/images/x74244.jpg
 x74244x: /assets/images/x74244x.jpg
 x74244: /assets/images/x74244.jpg
+x74245: /assets/images/x74245.jpg
 x74245x: /assets/images/x74245x.jpg
 x74988: /assets/images/x74688.jpg
 x74988x: /assets/images/x74688x.jpg
