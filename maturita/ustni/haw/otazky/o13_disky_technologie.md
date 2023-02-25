@@ -30,17 +30,20 @@ mamr: /assets/images/13_mamr.jpg
 
 ### Zápis (princip TF hlavy)
 - Změnou polarity napětí na cívce se změní směr toku proudu v záznamové cívce magnetické hlavy, která způsobí změnu magnetického toku jedním nebo druhým směrem, který vnutí záznamové vrstvě orientaci -> 1 a 0
+
 ![TF]({{page.tf1 | relative_url}})
 ![TF2]({{page.tf2 | relative_url}})
 
 ### Čtení (princip MR hlavy)
 - Jádrem MR hlavy je magnetorezistivní prvek, který je nad pohybující se záznamovou vrstvou, kde jsou různě orientované magnety, které změnou magnetického pole změní odpor, střída se 1 a 0
+
 ![MR]({{page.mr | relative_url}})
 
 ### Podélný zápis LMR
 - Jednotlivé bity jsou uchovávaný vodorovně s plotnou disku
 - Při vyšších hustotách dochází vlivem paramagnetismu k samovolné ztrátě uložených dat
 - Jednotlivá magnetická pole (bity) se nedají uchovat izolovaná, vzájemně integrují a dochází ke ztrátě informace uložené na disku
+
 ![LMR]({{page.lmr | relative_url}})
 
 ### Kolmý zápis PMR
@@ -49,6 +52,7 @@ mamr: /assets/images/13_mamr.jpg
 - Asymetrická hlavička se stará o to, aby pole směřováno více do hloubky než do šířky.
 - Tím jsou prvky záznamové plotny orientovány nikoli podélně, ale svisle.
 - Díky svislé orientaci lze dosáhnout až pětinásobné hustoty zápisu
+
 ![PMR]({{page.pmr | relative_url}})
 
 ## Základní pojmy
