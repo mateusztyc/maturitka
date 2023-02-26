@@ -32,7 +32,7 @@ uefi2: /assets/images/16_uefi2.jpg
 - PC zdroj musí zabezpečit napětí v určitém rozsahu, nesmí poklesnout pod stanovený limit ani při maximální maximálním zatížení zdroje
 
 ![Konektory]({{page.konektory | relative_url}})
-![Tolerance]({{page.rolerance | relative_url}})
+![Tolerance]({{page.tolerance | relative_url}})
 
 - Výrobci zdrojů
     - Gigabyte, Corsair, SilverStone
