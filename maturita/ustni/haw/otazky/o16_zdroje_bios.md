@@ -4,7 +4,7 @@ title: Zdroje PC, BIOS, UEFI a proces bootování PC
 description: Otázka č.16 - Zdroje PC, BIOS, UEFI a proces bootování PC
 has_children: false
 nav_exclude: true
-konektory: /assets/images/16_konektory.jpg
+konektory: /assets/images/16_konektory.JPG
 ---
 # Zdroje PC, BIOS, UEFI a proces bootování PC
 ## PC zdroj
