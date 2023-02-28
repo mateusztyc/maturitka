@@ -15,4 +15,4 @@ vhdl3: /assets/images/vhdl1.jpg
 ![VHDL2]({{page.vhdl2 | relative_url}})
 ![VHDL3]({{page.vhdl3 | relative_url}})
 
-[Databaze ](~/files/skola.rar){: .btn .btn-green }
+[Databaze ](../files/skola.rar){: .btn .btn-green }
