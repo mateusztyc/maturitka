@@ -16,3 +16,4 @@ vhdl3: /assets/images/vhdl1.jpg
 ![VHDL3]({{page.vhdl3 | relative_url}})
 
 [Databaze ](../files/skola.rar){: .btn .btn-green }
+[STM32KIT ](../files/spse_stm32kit.zip){: .btn .btn-green }
