@@ -41,4 +41,45 @@ nav_exclude: true
 - Severní most = North Bridge
     - Systémový řadič, nazýván MCH (Memory Controller Hub)
     - Přímo komunikuje s COU, OP a GPU
-        - S jižním mostem pomocí speciální sběrnice DMI
+        - S jižním mostem pomocí speciální sběrnice DMI¨
+    - Propojen s CPU pomocí FSB (front Side Bus)
+     - 64 bit
+     - Od frekvence sběrnice se odvíjí taktovací frekvence CPU a OP
+      - Během 1 CLK dokáže přenést data 4x
+    - V případě víceprocesorového systému sdílejí CPU sběrnici FSB
+        - Nemožnost komunikace CPU přímo mezi sebou
+        - Snížení přenosové rychlost
+- Jižní most = South Bridge
+    - Nazván také ICH (Input Output Controler Hub)
+    - Pomalejší než MCH
+    - Umožnuje připojení periferních zařízení k MB
+    - Obsahuje řadič disků (ATA, SATA, eSATA, RAID) a rozhraní (USB, PS/2)
+    - Řídí komunikace na sběrnici PCIe
+    - K obvodu muže být připojen zvukový adaptér, paměťový obvod BIOS, integrovaný síťový adaptér
+    - Se severním mostem propojeno pomocí DMI
+
+- Čipové sady s integrovaným řadičem OP
+    - Severní most dostal označení IOH = Input Output Hub
+    - Řadič operační paměti se přesunul z IOH do CPU
+    - Místo FSB sběrnice se objevuje Quick Path Interconnect QPI
+    - Rychlejší komunikace
+    - Odolnější proti chybám vzniklých při přenosu
+    - Lepší kompatibilita s OP
+    - Lepší chlazení díky integraci v CPU
+    - Vyšší teplo vyzářené z CPU
+    - QUICK PATH INTERCONNECT
+        - Umožnuje komunikaci více CPU přímo mezi sebou
+        - Full duplex (2x20bit)
+        - Každá IOH obsahuje 2 QPI
+            - Využití jednoho IOH – pro každý CPU vlastní QPI
+            - Využití dvou IOH – pro každý CPU vlastní IOH
+
+- Čipová sada s plně integrovaným severním mostem
+    - Kromě řadiče OP je integrován také řadič GPU sběrnice
+    - Základní deska nově obsahuje PCH
+        - Platform Controler Hub
+        - Propojeno s CPU pomocí DMI
+        - Zastává funkci jižního mostu
+
+## Typy a charakteristika sockterů Intel a AMD
+- 
