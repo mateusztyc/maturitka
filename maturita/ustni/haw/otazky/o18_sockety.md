@@ -82,4 +82,100 @@ nav_exclude: true
         - Zastává funkci jižního mostu
 
 ## Typy a charakteristika sockterů Intel a AMD
-- 
+- Patice (socket) je konektor pro připojení CPU k základní desce
+- Slot = konektor, do kterého se procesor staví
+- Typ patice určuje typ použitého procesoru
+- Mají podobný tvar, ale liší se počtem otvorů pro piny procesoru
+- INTEL
+    - LGA 1151
+        - Skylake
+    - LGA 2011
+        - Core i5, i7
+    - Socket 1150
+        - Haswell
+    - Socket 1155
+        - Sandy Bridge
+    - Socket 1366
+    - Socket 1156
+- AMD
+    - Socket AM4
+        - Ryzen
+    - Socket FM2+
+    - Socket FM1, FM2
+    - Socket AM3+, AM3, AM2, AM2+
+- Intel vs. AMD
+    - LGA = plošky
+    - PGA = piny (háčky)
+    - Intel používá plošky
+    - AMD používá hlavně piny, ale i plošky
+    - Liší se jinou definicí TDP
+
+## TDP a návrh chlazení
+- Thermal Design Power
+- Udává, jaký tepelný výkon zařízení může vydávat (trvaly tepelný výkon)
+- Slouží k dimenzování výkonu chladiče
+- Čím větší TDP, tím větší a výkonnější chladič potřebujeme
+- **Pasivní chlazení**
+    - Kovová nepohyblivá součástka, která má na sobě navařená žebra pro zajištění co největší plochy z důvodu předávání tepla okolnímu vzduchu
+    - Vyrobeno z mědi nebo hliníku
+    - Chladič je uchycen pomocí šroubků na základní desce, mezi CPU a chladičem je nanesena tenká vrstva teplo vodivé pasty, která zlepšuje přenos tepla
+    - Heatpipe
+- **Aktivní chlazení**
+    - Aktivní chlazení je prováděno proudícím vzduchem
+    - Proud vzduchu je obvykle vytvářen ventilátorem
+    - Použito pro chlazení CPU, GPU, zdroje nebo pevných disků
+    - pomocí aktivních chladičů se vytváří tzv. „tunely“, v principu jde o dosažení lepšího proudění vzduchu skříní (na přední části je jeden aktivní chladič, který nasaje vzduch do skříně, ten se zde ohřeje a zdrojem nebo dalším aktivním chladičem pod zdrojem je vysáván mimo skříň)
+    - Ventilátor
+        - 3-pinové - které dodávají konstantní napětí – třetí vodič je snímač otáček
+            - V případě 3pinového konektoru potřebujete dražší chladič, který si reguluje otáčky v závislosti na teplotě mikroprocesoru.
+        - 4-pinové - (PWM – pulse-width modulation)
+            - Ty jsou napojeny na elektroniku desky, která pulzně reguluje otáčky ventilátoru v závislosti na teplotě.
+            - Pak stačí jednodušší a levnější ventilátor
+
+- Vodní chlazení, chlazení tekutým dusíkem, oxidem uhličitým, tekutým kovem
+
+## Heat pipe
+- Slouží k přenosu tepla z jednoho místa na druhé za pomocí pracovní látky
+- Jde o uzavřený kovový válec, který je naplněný tekutinou
+- Na jednom konci je zasazeny do zdroje tepla a na druhém do chladiče
+- Po dosažení teploty, na kterou je nastaven se začne pracovní látka (čpavek, voda, alkohol)
+odpařovat a proudí směrem k ochlazovanému místu, kde kondenzuje
+- Proud par se dává do pohybu na základě rozdílných tlaků v místě výparníku (vyšší tlak) a v místě
+kondenzátoru (nižší tlak)
+- Návrat kondenzátu zpět ke zdroji tepla je zajištěn kapilárními silami v porézním materiálu, který
+kondenzát nasává zpět ke zdroji tepla (pomocí knotu)
+- Umožňuje, aby pracoval v poloze, kdy je kondenzát níže než výparník
+
+### Rozdíl mezi heat pipe a dvoufázovým termosifonem
+-  Termosifonové chlazení na rozdíl od heat pipe dokáže vyvinout velký průtok úzkým průřezem a
+odvést tak značné množství tepla z velmi malé oblasti
+- Vyžaduje dostatečný výškový rozdíl, neměnnou orientaci a stabilní podmínky
+
+## Teplená ochrana procesoru
+- Teplo, které CPU vyprodukuje je potřeba spolehlivě odvádět
+- Pokud by došlo k poruše chlazení, mohlo by to mít pro CPU katastrofální následky
+- Proto existují technologie, které mohou stav kritické teploty ovlivnit
+
+### Tepelné ochrany - Technologie
+- TCC = Thermal Control Circuit
+    - Vkláda nulové cykly
+    - Tepelná dioda, která se používá k regulaci otáček ventilátoru
+    - Při překročení teplotního limitu je vysílán signál, který aktivuje CPU throtling
+    - Výsledkem je snížení napětí a frekvence CPU
+- EIST = Enhanced INtel Speed Technology
+    - CPU mění za běhu dynamicky taktovací frekvenci a napětí podle zátěže
+- Inteligent Power Capatibility
+    - Inteligentní řízení spotřeby
+    - Funkce, která napájí jednotlivé sub systémy pouze v případě potřeby
+- Cool'n'Quiet
+    - Používáno AMD
+    - Pracuje podobně jako EIST od Intelu
+    - Dynamická změna taktovací frekvence a napětí na CPU podle zátěže
+- Turbo Boost
+    - Umožňuje jednotlivým jádrům CPU běžet rychleji, než je jejich základní frekvence za předpokladu, že to okolnosti dovolují
+    - Dochází ke zvýšení výkonu jedno i více vláknových operací
+
+## Vliv zátěže a taktovací frekvence na spotřebu
+- Při přetaktování se spotřeba jednotlivých komponent několikanásobně zvyšuje
+- Je třeba zvolit zdroj s dostatečnou výkonovou rezervou
+- S vyšší frekvenci stoupá výdej tepla
