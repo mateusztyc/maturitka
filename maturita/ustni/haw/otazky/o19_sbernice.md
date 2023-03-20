@@ -10,7 +10,7 @@ nav_exclude: true
 - Sběrnice je skupina signálových vodičů
 - Slouří ke vzájemnému propojení CPU, OP a dalších zařízení (GPU, zvukovka, síťovka, řadič HDD)
 
-![Obrazok](./assets/images/x/speaker.JPG)
+![Obrazokk](./assets/images/x/speaker.JPG)
 
 ## Typy vodičů sběrnic
 - Řídící
