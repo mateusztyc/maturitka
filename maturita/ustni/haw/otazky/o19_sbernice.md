@@ -10,7 +10,7 @@ nav_exclude: true
 - Sběrnice je skupina signálových vodičů
 - Slouří ke vzájemnému propojení CPU, OP a dalších zařízení (GPU, zvukovka, síťovka, řadič HDD)
 
-![o1](../assets/images/o19/1.jpg)
+![obrazek1](../assets/images/o19/1.jpg)
 
 ## Typy vodičů sběrnic
 - Řídící
@@ -24,3 +24,21 @@ nav_exclude: true
     - Přenos dat
     - Počet vodičů sběrnice určuje, kolik dat je sběrnice schopná přenést najednou v 1 taktu
     - D+,D-
+
+## Rozdělení sběrnic
+- Paralelní sběrnice – PCI, PCI-x, ISA
+- Sériová sběrnice – USB, PCI-express
+- Interní sběrnice – ISA, PCI
+- Externí sběrnice – USB, FireWare
+
+## Základní parametry sběrnice
+- Frekvence
+    - Maximální frekvence, se kterou může sběrnice pracovat
+- Šířka sběrnice
+    - Dáno počtem vodičů, po kterých se data přenášejí
+- Rychlost přenosu dat (propustnost)
+    - Množství přenesených dat za jednotku času
+- Přístupová doba
+    - Střední doba čekání na uvolnění sběrnice
+
+## Systémová sběrnice - FSB
