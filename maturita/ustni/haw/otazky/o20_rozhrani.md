@@ -45,6 +45,7 @@ nav_exclude: true
     - Černý = master
     - Šedý = slave (nezapojen)
     - Modrý – na nákladní desku
+![Obrazok](/maturitka/assets/images/o20/1.jpg)
 
 ### Rozhraní FDD - floppy disk drive
 - 34 pinový kabel
@@ -53,6 +54,8 @@ nav_exclude: true
 - Vysokorychlostní paralelní rozhraní pro servery
 - ULTRA320 SCSI, ULTRA640 SCSI
     - Číslo udává max přenosovou rychlost v MB/s
+
+![Obrazok](/maturitka/assets/images/o20/2.jpg)
 
 ### Rozhraní SATA
 - Serial ATA s datovou šířkou 1 bit
@@ -71,6 +74,8 @@ způsobem
     - SATA III.
         - Maximální rychlost 600 MB/s
         - Standart SATA/600
+![Obrazok](/maturitka/assets/images/o20/3.jpg)
+![Obrazok](/maturitka/assets/images/o20/4.jpg)
 
 ### eSATA
 - External SATA
@@ -82,6 +87,7 @@ kterému vede normální datový SATA kabel
 - Konektor eSATA má lépe zpracovaný konektor kvůli častému připojování a odpojování disků
     - Až 500 zasunutí oproti klasickému SATA s 50 zasunutím
     - Délka kabelu až 2 metry
+![Obrazok](/maturitka/assets/images/o20/5.jpg)
 
 ### mSATA
 - Mini SATA
@@ -98,18 +104,22 @@ kterému vede normální datový SATA kabel
 - K připojení potřebujete speciální kabel, disk pak může komunikovat se systémem buď přes SATA
 nebo PCI express
 - Postupně jej nahradil slot M.2
+![Obrazok](/maturitka/assets/images/o20/6.jpg)
+![Obrazok](/maturitka/assets/images/o20/7.jpg)
 
 ### SATA M.2
 - Čtveřice PCI express linek, dvojce kanálu SATA 6 Gb/s, trojice kanálu USB, PCM audio
 - Jedná se o univerzální konektor, k jehož funkcím je nutné přistupovat klíčováním
 
 ### Srovnání rychlostí SATA
+![Obrazok](/maturitka/assets/images/o20/8.jpg)
 
 ### Technologie SATA II. a III. - NCQ
 - Native Command Queuing
 - Přirozené řazení požadavků
 - Ponechává rozhodování o pořadí čtení dat na logice disku
 - Posloupnost čtení dat si seřadí tak, aby k tomu potřeboval co nejméně otáček a přesunu hlav
+![Obrazok](/maturitka/assets/images/o20/9.jpg)
 
 ### Technologie SATA II. a III. – HOT SWAP
 - Dovoluje připojit a odpojit disk za běhu počítače tak, aby je OS rozpoznal
@@ -123,6 +133,7 @@ nebo PCI express
 
 ### Technologie SATA II. a III. – Port Multiplier
 - Slouží k tomu, abychom mohli s jedním řadičem obsloužit více pevných disků
+![Obrazok](/maturitka/assets/images/o20/10.jpg)
 
 ### Technologie AHCI
 - Advanced Host Controler Interface
@@ -148,6 +159,7 @@ Swap)
 řadiči a jeho ovladači
 - Narůst 7x přenosové kapacity 3x se snížila latence (zpoždění)
 - Technologie vyvinutá speciálně pro SSD disky připojené PCI expres rozhraním
+![Obrazok](/maturitka/assets/images/o20/11.jpg)
 
 ## SAS rozhraní = Serial Attached SCSI
 - Pokračovatel SCSI sériového rozhraní
@@ -155,10 +167,12 @@ Swap)
 - Konektor se podobá SATA
 - Datová propustnost 4,8 GB/s
 - Rychlost 12 Gb/s
+![Obrazok](/maturitka/assets/images/o20/12.jpg)
 
 ## FIREWIRE - IEEE1394
 - Vysokorychlostní sériová sběrnice od Apple k propojení externích SSD disků
 - Rychlost 800 Mb/s
+![Obrazok](/maturitka/assets/images/o20/13.jpg)
 
 ## USB
 - Universal Seriál Bus
@@ -229,6 +243,10 @@ Swap)
     - Pokud bude třeba připojit zařízení USB 2.0 ke konektoru USB 3.0 na PC, bude vše v pořádku, opačně však všechny nové konektory do staršího USB 2.0 připojit nepůjdou
     - Zpětná kompatibilita je zajištěna tak, že konektor USB 3.0 "obsahuje" zachovaný starý konektor USB 2.0, do kterého lze zařízení USB 2.0 i připojit.
     - Obráceně to však již nepůjde u všech typů konektorů
+![Obrazok](/maturitka/assets/images/o20/14.jpg)
+![Obrazok](/maturitka/assets/images/o20/15.jpg)
+![Obrazok](/maturitka/assets/images/o20/16.jpg)
+![Obrazok](/maturitka/assets/images/o20/17.jpg)
 
 ## Thunderbolt
 - Rychlé HW rozhraní umožňující připojit k PC periferie přes rozšiřující sběrnici
