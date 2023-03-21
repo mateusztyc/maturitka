@@ -62,10 +62,7 @@ můstkem
     - Náhrada za sběrnici PCI 2.3
     - Ztrojnásobená šířka datové sběrnice (64 bit), vyšší maximální frekvence (133 MHz)
     - Vysoká datová propustnost
-![Obrazok](https://mateusztyc.github.io/maturitka/assets/images/o19/2.jpg)
-![Obrazok](https://mateusztyc.github.io/maturitka/assets/images/o19/3.jpg)
-![Obrazok](https://mateusztyc.github.io/maturitka/assets/images/o19/4.jpg)
-![Obrazok](https://mateusztyc.github.io/maturitka/assets/images/o19/5.jpg)
+[Obrazok](/assets/images/o19/1.jpg)
 
 - ISA
     - Pomalá sběrnice z roku 1984
@@ -87,4 +84,3 @@ můstkem
     - 4 řádky kontaktů místo 2 (ISA)
     - Má stejnou velikost jako ISA a stejné vývody (62 + 36) a má navíc ještě 59 vývodů umístěných mezi starými vývody ISA (při zasunutí do ISA sběrnice zůstanou nezapojeny)
 
-![Obrazok](https://mateusztyc.github.io/maturitka/assets/images/o19/6.jpg)
