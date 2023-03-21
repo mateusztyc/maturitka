@@ -10,7 +10,7 @@ nav_exclude: true
 - Sběrnice je skupina signálových vodičů
 - Slouří ke vzájemnému propojení CPU, OP a dalších zařízení (GPU, zvukovka, síťovka, řadič HDD)
 
-![Obrazok](https://mateusztyc.github.io/maturitka/assets/images/o19/1.jpg)
+[Obrazok](/assets/images/o19/1.jpg)
 
 ## Typy vodičů sběrnic
 - Řídící
@@ -62,7 +62,7 @@ můstkem
     - Náhrada za sběrnici PCI 2.3
     - Ztrojnásobená šířka datové sběrnice (64 bit), vyšší maximální frekvence (133 MHz)
     - Vysoká datová propustnost
-[Obrazok](/assets/images/o19/1.jpg)
+
 
 - ISA
     - Pomalá sběrnice z roku 1984
