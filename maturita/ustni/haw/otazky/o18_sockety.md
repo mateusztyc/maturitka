@@ -7,6 +7,11 @@ nav_exclude: true
 ---
 # Konstrukční uspořádaní PC - sockety, chlazení, chipsety
 ## Vnitřní struktura a popis jednotlivých částí základní desky
+![Obrazok](/maturitka/assets/images/o18/1.jpg)
+![Obrazok](/maturitka/assets/images/o18/2.jpg)
+![Obrazok](/maturitka/assets/images/o18/3.jpg)
+![Obrazok](/maturitka/assets/images/o18/4.jpg)
+![Obrazok](/maturitka/assets/images/o18/5.jpg)
 
 - Účelem základní desky je propojit jednotlivé součástky PC do fungujícího celku a poskytnout jim elektrické napájení
 - Nejdůležitější IO jsou zabudovány v čipové sadě
@@ -37,6 +42,8 @@ nav_exclude: true
     - Čipová sada s obvody severního a jižního mostu
     - Čipová sada s integrovaným řadičem paměti v CPU
     - Čipová sada s integrovaným severním mostem
+
+![Obrazok](/maturitka/assets/images/o18/6.jpg)
 
 - Severní most = North Bridge
     - Systémový řadič, nazýván MCH (Memory Controller Hub)
@@ -146,10 +153,15 @@ kondenzátoru (nižší tlak)
 kondenzát nasává zpět ke zdroji tepla (pomocí knotu)
 - Umožňuje, aby pracoval v poloze, kdy je kondenzát níže než výparník
 
+![Obrazok](/maturitka/assets/images/o18/7.jpg)
+![Obrazok](/maturitka/assets/images/o18/8.jpg)
+
 ### Rozdíl mezi heat pipe a dvoufázovým termosifonem
 -  Termosifonové chlazení na rozdíl od heat pipe dokáže vyvinout velký průtok úzkým průřezem a
 odvést tak značné množství tepla z velmi malé oblasti
 - Vyžaduje dostatečný výškový rozdíl, neměnnou orientaci a stabilní podmínky
+
+![Obrazok](/maturitka/assets/images/o18/9.jpg)
 
 ## Teplená ochrana procesoru
 - Teplo, které CPU vyprodukuje je potřeba spolehlivě odvádět
@@ -179,3 +191,5 @@ odvést tak značné množství tepla z velmi malé oblasti
 - Při přetaktování se spotřeba jednotlivých komponent několikanásobně zvyšuje
 - Je třeba zvolit zdroj s dostatečnou výkonovou rezervou
 - S vyšší frekvenci stoupá výdej tepla
+
+![Obrazok](/maturitka/assets/images/o18/10.jpg)
