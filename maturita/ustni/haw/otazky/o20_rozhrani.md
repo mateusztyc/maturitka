@@ -45,6 +45,7 @@ nav_exclude: true
     - Černý = master
     - Šedý = slave (nezapojen)
     - Modrý – na nákladní desku
+
 ![Obrazok](/maturitka/assets/images/o20/1.jpg)
 
 ### Rozhraní FDD - floppy disk drive
@@ -74,6 +75,7 @@ způsobem
     - SATA III.
         - Maximální rychlost 600 MB/s
         - Standart SATA/600
+
 ![Obrazok](/maturitka/assets/images/o20/3.jpg)
 ![Obrazok](/maturitka/assets/images/o20/4.jpg)
 
@@ -87,6 +89,7 @@ kterému vede normální datový SATA kabel
 - Konektor eSATA má lépe zpracovaný konektor kvůli častému připojování a odpojování disků
     - Až 500 zasunutí oproti klasickému SATA s 50 zasunutím
     - Délka kabelu až 2 metry
+
 ![Obrazok](/maturitka/assets/images/o20/5.jpg)
 
 ### mSATA
@@ -167,11 +170,13 @@ Swap)
 - Konektor se podobá SATA
 - Datová propustnost 4,8 GB/s
 - Rychlost 12 Gb/s
+
 ![Obrazok](/maturitka/assets/images/o20/12.jpg)
 
 ## FIREWIRE - IEEE1394
 - Vysokorychlostní sériová sběrnice od Apple k propojení externích SSD disků
 - Rychlost 800 Mb/s
+
 ![Obrazok](/maturitka/assets/images/o20/13.jpg)
 
 ## USB
