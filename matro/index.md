@@ -10,4 +10,4 @@ has_children: true
 
 [Databaze](../files/skola.rar){: .btn .btn-green }
 [STM32KIT](../files/spse_stm32kit.zip){: .btn .btn-green }
-![Obrazok](../assets/images/x/speaker.JPG)
+[Slovnik](../files/slovnik_gal.cpp){: .btn .btn-green }
