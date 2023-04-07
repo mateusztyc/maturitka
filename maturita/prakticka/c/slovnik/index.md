@@ -8,7 +8,9 @@ parent: c
 
 
 ## Pokročilá práce s textovým souborem
-- Napište program v jazyce C, který umožní překládat a testovat slovíčka. Použijte textový soubor, který obsahuje informace o slovíčkách (anglické, české, číslo lekce).
+- Napište program v jazyce C, který umožní překládat a testovat slovíčka. Použijte textový soubor, který obsahuje informace o slovíčkách (anglické, české, číslo lekce)
+
+
 ### Požadavky:  
 - vhodně použijte projekt a vlastní hlavičkový soubor
 - vytvořte vlastní funkce podle zadání
