@@ -9,7 +9,7 @@ parent: c
 [slovnik.h](./slovh.md){: .btn .btn-purple }
 [slovnik.c](./slovc.md){: .btn .btn-purple }
 [main.c](./main.md){: .btn .btn-purple }
-[Stahnout projekt](/maturita/files/Slovnik.rar){: .btn .btn-green}
+[Stahnout projekt](/maturitka/files/Slovnik.rar){: .btn .btn-green}
 
 ## Pokročilá práce s textovým souborem
 - Napište program v jazyce C, který umožní překládat a testovat slovíčka. Použijte textový soubor, který obsahuje informace o slovíčkách (anglické, české, číslo lekce)
