@@ -53,13 +53,16 @@ nav_exclude: true
             
             if(strcmp(prekladd,cz)==0){
                 printf("%s->%s\n",cz,aj);
+                return 1;
             }
             if(strcmp(prekladd,aj)==0){
                 printf("%s->%s\n",aj,cz);
+                return 1;
             }
             
         }
         
+        return 0;
     }
     void testovani(char soubor[]){
         FILE *f,*u;
@@ -223,4 +226,46 @@ nav_exclude: true
             printf("Ulozeno\n");
             system("pause");
         } 
+        
+        
+        
+    }
+    void odstraneni(char soubor[],char slovo_odstr[]){
+        FILE *f,*h;
+        char *p, cz[30],aj[30],radek[80];
+        int lekce,od=0;
+        
+        for(int i=0;i<=strlen(slovo_odstr);i++){
+            slovo_odstr[i]=tolower(slovo_odstr[i]);
+        }
+        
+        f=fopen(soubor,"r");
+        h=fopen("odstr.txt","w");
+        
+        while(fgets(radek,80,f)!=NULL){
+            p=strtok(radek,"|");
+            lekce=atoi(p);
+            p=strtok(NULL,"|");
+            strcpy(cz,p);
+            p=strtok(NULL,"|");
+            strcpy(aj,p);
+            
+            if(strcmp(slovo_odstr,aj)==0){
+                strcpy(slovo_odstr,cz);
+            }
+            
+            if(strcmp(slovo_odstr,cz)!=0){
+                od++;
+                fprintf(h,"%d|%s|%s|\n",lekce,cz,aj);
+            }
+        }
+        
+        fclose(f);
+        fclose(h);
+        
+        remove(soubor);
+        
+        rename("odstr.txt",soubor);
+        
+        
     }

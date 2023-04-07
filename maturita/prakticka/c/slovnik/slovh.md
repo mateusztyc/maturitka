@@ -3,33 +3,22 @@ layout: page
 title: Slovnik
 description: Slovník
 has_children: false
+nav_exclude: true
 ---
 
-    #ifndef ZLOMEK_H
-    #define ZLOMEK_H
+		#ifndef SLOVNIK_H
+	#define SLOVNIK_H
 
-    #include <iostream>
-    using namespace std;
+	#include <stdio.h>
+	#include <stdlib.h>
+	#include <string.h>
+	#include <ctype.h>
+	#include <time.h>
 
-    class Zlomek {
-    public:
-	    Zlomek();
-	
-	    friend istream& operator>>(istream& in, Zlomek &z);
-	    friend ostream& operator<<(ostream& out, Zlomek z);
-	
-	    Zlomek operator+(Zlomek z);
-	    Zlomek operator-(Zlomek z);
-	    Zlomek operator*(Zlomek z);
-	    Zlomek operator/(Zlomek z);
-	
-	    int porovnat(Zlomek z);
-    private:
-	    int cit, jmen;
-	
-	    Zlomek krac();
-	    int gcd(int a,int b);
-	    int lcm(int a, int b);
-    };
-
-    #endif
+	int pocet_slov(char soubor);
+	int pridat(char soubor[]);
+	int preklad(char soubor[], char prekladd[]);
+	void testovani(char soubor[]);
+	void rand_test(char soubor[], int pocet);
+	void odstraneni(char soubor[],char slovo_odstr[]);
+	#endif
