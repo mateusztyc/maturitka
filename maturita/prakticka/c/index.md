@@ -6,4 +6,4 @@ has_children: false
 parent: praktická
 ---
 
-[Slovnik](../maturitka/prakticka/c/slovnik/){: .btn .btn-blue }
+[Slovnik](../slovnik/){: .btn .btn-blue }
