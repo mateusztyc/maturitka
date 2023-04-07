@@ -6,7 +6,7 @@ has_children: false
 parent: c
 ---
 
-[slovnik.h](){: .btn .btn-purple }
+[slovnik.h](./slovh.md){: .btn .btn-purple }
 [slovnik.c](){: .btn .btn-purple }
 [main.c](){: .btn .btn-purple }
 
