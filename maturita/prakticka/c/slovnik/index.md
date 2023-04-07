@@ -6,6 +6,9 @@ has_children: false
 parent: c
 ---
 
+[slovnik.h](){: .btn .btn-red }
+[slovnik.c](){: .btn .btn-red }
+[main.c](){: .btn .btn-red}
 
 ## Pokročilá práce s textovým souborem
 - Napište program v jazyce C, který umožní překládat a testovat slovíčka. Použijte textový soubor, který obsahuje informace o slovíčkách (anglické, české, číslo lekce)
