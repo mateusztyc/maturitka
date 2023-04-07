@@ -223,7 +223,4 @@ nav_exclude: true
             printf("Ulozeno\n");
             system("pause");
         } 
-	
-	
-	
-}
+    }
