@@ -7,7 +7,7 @@ parent: c
 ---
 
 [slovnik.h](./slovh.md){: .btn .btn-purple }
-[slovnik.c](){: .btn .btn-purple }
+[slovnik.c](./slovc.md){: .btn .btn-purple }
 [main.c](){: .btn .btn-purple }
 
 ## Pokročilá práce s textovým souborem
