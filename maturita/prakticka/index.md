@@ -6,3 +6,4 @@ has_children: true
 parent: Maturita
 ---
 
+## [Ceeecko](../prakticka/c/)
