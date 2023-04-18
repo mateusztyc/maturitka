@@ -12,3 +12,4 @@ has_children: true
 [Databaze OOP2](./oop2/){: .btn .btn-blue}
 [Knihovny 1](./knihovny1/){: .btn .btn-blue}
 [Knihovny 2](./knohvny2/){: .btn .btn-blue}
+[Dynamicky spojovy seznam](./slovnik/){: .btn .btn-blue}
